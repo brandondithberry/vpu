@@ -465,7 +465,7 @@ section.alt {
 .hero .logo {
   display: block;
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   margin: 0 auto;
   animation: logo 3s linear;
   opacity: 0;
@@ -618,7 +618,11 @@ ____________________________________*/
   }
 
   .hero {
-    height: 50vw;
+    height: 40vw;
+  }
+
+  .hero .logo {
+    max-width: 500px;
   }
 }
 
@@ -650,6 +654,10 @@ ____________________________________*/
   .hero {
     padding: 15rem 1rem;
     text-align: center;
+  }
+
+  .hero .logo {
+    max-width: 700px;
   }
 
   .days .container a {
