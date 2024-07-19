@@ -19,11 +19,13 @@ collections:
         file: "pages/july31st.md"
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: markdown }
           - label: Events
             name: events
             widget: list
             fields:
-              - { label: Title, name: title, widget: markdown, minimal: true }
+              - { label: Times, name: times, widget: string }
+              - { label: Title, name: title, widget: string }
               - {
                   label: Location,
                   name: location,
@@ -42,11 +44,13 @@ collections:
         file: "pages/august1st.md"
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: markdown }
           - label: Events
             name: events
             widget: list
             fields:
-              - { label: Title, name: title, widget: markdown, minimal: true }
+              - { label: Times, name: times, widget: string }
+              - { label: Title, name: title, widget: string }
               - {
                   label: Location,
                   name: location,
