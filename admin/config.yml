@@ -95,3 +95,15 @@ collections:
         options: ["Moderator", "Panelist"]
       - { label: Bio, name: bio, widget: markdown, required: false }
       - { label: Headshot, name: headshot, widget: image, required: false }
+  - name: "locations"
+    label: "Locations"
+    folder: "locations"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: location
+    fields:
+      - { label: Place, name: place, widget: string }
+      - { label: Address, name: address, widget: string }
+      - { label: Days, name: days, widget: string }
+      - { label: Image, name: image, widget: image, required: false}
+
