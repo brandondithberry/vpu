@@ -467,6 +467,15 @@ section.alt {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
+  animation: logo 3s linear;
+  opacity: 0;
+}
+
+@keyframes logo {
+  0% {opacity: 0; filter: brightness(0);}
+  20% {opacity: 1; filter: brightness(1);}
+  80% {opacity: 1; filter: brightness(1);}
+  100% {opacity: 0; filter: brightness(2);}
 }
 
 .about {
