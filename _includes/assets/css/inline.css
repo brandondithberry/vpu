@@ -10,6 +10,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "GARAGE GLITCH";
+  src: url("/static/fonts/GARAGEGLITCHBOLDBold.woff2") format("woff2"),
+    url("/static/fonts/GARAGEGLITCHBOLDBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   overflow: hidden;
 }
@@ -77,7 +86,11 @@ h1 {
 }
 
 h1,
-h2,
+h2 {
+  font-family: "GARAGE GLITCH";
+  font-weight: bold;
+}
+
 h3,
 h4 {
   font-weight: bold;
