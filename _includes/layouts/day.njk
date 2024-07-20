@@ -14,17 +14,10 @@
           </div>
         </div>
       </section>
-      <section class="schedule">
+      <section class="mobile-schedule">
         <div class="container">
           <h2>Schedule</h2>
           <table>
-            <tr class="header">
-              <th>Times</th>
-              <th>Type</th>
-              <th>Event</th>
-              <th>Location</th>
-              <th>Info</th>
-            </tr>
             {% for event in events %}
             <tr>
               <td style="background: white; color: black">
@@ -33,28 +26,27 @@
                 {% endif %}
               </td>
               {% if event.type === "Presentation" %}
-              <td style="background: rgb(226, 90, 85); color: black;">
+              <td style="background: rgb(226, 90, 85); color: black">
                 <b>PRESENTATION</b>
               </td>
-              {% endif %}
-              {% if event.type === "Demo" %}
-              <td style="background: rgb(226, 170, 85); color: black;">
+              {% endif %} {% if event.type === "Demo" %}
+              <td style="background: rgb(226, 170, 85); color: black">
                 <b>DEMO</b>
               </td>
-              {% endif %}
-              {% if event.type === "Panel Discussion" %}
-              <td style="background: rgb(181, 85, 226); color: black;">
+              {% endif %} {% if event.type === "Panel Discussion" %}
+              <td style="background: rgb(181, 85, 226); color: black">
                 <b>PANEL DISCUSSION</b>
               </td>
-              {% endif %}
-              {% if event.type === "Networking" %}
-              <td style="background: rgb(85, 226, 191); color: black;">
+              {% endif %} {% if event.type === "Networking" %}
+              <td style="background: rgb(85, 226, 191); color: black">
                 <b>NETWORKING</b>
               </td>
               {% endif %}
               <td>{{ event.title }}</td>
               {% if event.location %}
-              <td><span><b>Location: </b></span>{{ event.location }}</td>
+              <td>
+                <span><b>Location: </b></span>{{ event.location }}
+              </td>
               {% endif %} {% if event.info %}
               <td>
                 {{ event.info | markdown | safe }}
@@ -64,6 +56,70 @@
             {% endfor %}
           </table>
         </div>
+      </section>
+      <section class="schedule">
+        <h2>Schedule</h2>
+        <table>
+          <tr class="header">
+            <th>Times</th>
+            <th>Type</th>
+            <th>Event</th>
+            <th>Location</th>
+            <th>Info</th>
+          </tr>
+          {% for event in events %}
+          <tr>
+            <td
+              class="times"
+              style="background: white; color: black; border: 1px solid black"
+            >
+              <strong>{{ event.times }}</strong>
+            </td>
+            {% if event.type === "Presentation" %}
+            <td class="type" style="background: rgb(226, 90, 85); color: black">
+              <b>PRESENTATION</b>
+            </td>
+            {% elif event.type === "Demo" %}
+            <td
+              class="type"
+              style="background: rgb(226, 170, 85); color: black"
+            >
+              <b>DEMO</b>
+            </td>
+            {% elif event.type === "Panel Discussion" %}
+            <td
+              class="type"
+              style="background: rgb(181, 85, 226); color: black"
+            >
+              <b>PANEL DISCUSSION</b>
+            </td>
+            {% elif event.type === "Networking" %}
+            <td
+              class="type"
+              style="background: rgb(85, 226, 191); color: black"
+            >
+              <b>NETWORKING</b>
+            </td>
+            {% else %}
+            <td class="type"></td>
+            {% endif %}
+            <td>{{ event.title }}</td>
+            {% if event.location %}
+            <td>
+              <span><b>Location: </b></span>{{ event.location }}
+            </td>
+            {% else %}
+            <td></td>
+            {% endif %} {% if event.info %}
+            <td>
+              {{ event.info | markdown | safe }}
+            </td>
+            {% else %}
+            <td></td>
+            {% endif %}
+          </tr>
+          {% endfor %}
+        </table>
       </section>
     </main>
 

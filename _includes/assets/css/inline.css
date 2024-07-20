@@ -242,29 +242,6 @@ button:hover {
   color: var(--background);
 }
 
-tr {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-th {
-  border: 1px solid white;
-  font-weight: bold;
-  padding: 0.5rem;
-  color: black;
-  background: white;
-  margin: 0;
-}
-
-td {
-  border: 1px solid white;
-  font-weight: normal;
-  padding: 1rem;
-  margin: 0;
-}
-
 /* HEADER & MENU 
 ------------------------------------*/
 
@@ -427,10 +404,18 @@ section {
 }
 
 @keyframes overlay {
-  0% {background: rgba(0, 0, 0, 0);}
-  20% {background: rgba(0, 0, 0, 0.5);}
-  80% {background: rgba(0, 0, 0, 0.5);}
-  100% {background: rgba(0, 0, 0, 0);}
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  20% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  80% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0);
+  }
 }
 
 section .container {
@@ -519,10 +504,22 @@ section.alt {
 }
 
 @keyframes logo {
-  0% {opacity: 0; filter: brightness(0);}
-  20% {opacity: 1; filter: brightness(1);}
-  80% {opacity: 1; filter: brightness(1);}
-  100% {opacity: 0; filter: brightness(2);}
+  0% {
+    opacity: 0;
+    filter: brightness(0);
+  }
+  20% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  80% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  100% {
+    opacity: 0;
+    filter: brightness(2);
+  }
 }
 
 .about {
@@ -647,24 +644,32 @@ section.alt {
 }
 
 .schedule {
+  display: none;
+}
+
+.mobile-schedule {
   display: flex;
   place-content: center;
   place-items: center;
 }
 
-.schedule .container {
+.mobile-schedule .container {
   display: flex;
   flex-direction: column;
   place-content: center;
   place-items: center;
 }
 
-.schedule .header {
-  display: none;
+.mobile-schedule table,
+.mobile-schedule tr {
+  display: block;
+  flex-direction: column;
 }
 
-.schedule table {
-  display: block;
+.mobile-schedule td {
+  display: block !important;
+  padding: 0.5rem;
+  border: 1px solid white;
 }
 
 footer {
@@ -739,6 +744,39 @@ ____________________________________*/
     top: -5rem;
     width: 20%;
     max-width: 220px;
+  }
+
+  .schedule {
+    display: block;
+  }
+
+  .schedule table {
+    margin: 0 auto;
+    max-width: 1400px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 0.8rem;
+  }
+
+  .schedule th,
+  .schedule td {
+    border: 1px solid white;
+    padding: 0.5rem;
+  }
+
+  .schedule th {
+    background: white;
+    color: black;
+    border: 1px solid black;
+  }
+
+  .schedule .times,
+  .schedule .type {
+    width: 180px;
+  }
+
+  .mobile-schedule {
+    display: none;
   }
 
   .locations .location {
