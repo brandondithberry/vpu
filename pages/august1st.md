@@ -1,5 +1,6 @@
 ---
 title: August 1st
+invite: https://partiful.com/e/XOlIrrHeYdzlpffgeyrv
 image: /static/img/titlejuly31st.jpg
 description: Join us for an immersive one-day event crafted for advertising
   agency, corporate, and marketing professionals eager to explore the

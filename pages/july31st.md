@@ -1,5 +1,6 @@
 ---
 title: July 31st
+invite: https://partiful.com/e/sD1PdjH8TfC9mcJ8D8R8
 image: /static/img/titleaug1st.jpg
 description: Join us for an immersive one-day event designed for creative
   filmmaking professionals exploring the cutting-edge realm of Virtual
