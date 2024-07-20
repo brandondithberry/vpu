@@ -1,102 +1,96 @@
-<!DOCTYPE html>
-<html {% if section %} data-current="{{ section }}" {% endif %} lang="en">
-  {% include "components/head.njk" %}
+---
+layout: layouts/base.njk
+section: schedule
+---
 
-  <body>
-    {% include "components/header.njk" %}
-
-    <main>
-      <section class="schedule-hero">
-        <div class="container">
-          <div class="text">
-            <img src="{{ image }}" alt="day graphic" />
-            <h1 class="xxl-text">{{ title }}</h1>
-            <a href="{{ invite }}" target="_blank"><button class="alt">Sign Up</button></a>
-          </div>
-        </div>
-      </section>
-      <section class="description" style="background: white; color: black">
-        <div class="container">
-          <div class="text">
-            <p>{{ description }}</p>
-          </div>
-        </div>
-      </section>
-      <section class="mobile-schedule">
-        <div class="container">
-          <h2 class="xxl-text">Schedule</h2>
-          <table>
-            {% set eventColors = { "Presentation": "#2e0e0e", "Demo": "#0e2e26",
-            "Panel Discussion": "#210e2e", "Networking": "#0e1c2e" } %} {% for
-            event in events %}
-            <tr style="background: {{ eventColors[event.type] }}; color: white">
-              <td style="background: white; color: black">
-                {% if event.times %}
-                <strong>{{ event.times }}</strong>
-                {% endif %}
-              </td>
-              {% if event.type %}
-              <td>
-                <b>{{ event.type | upper }}</b>
-              </td>
-              {% endif %}
-              <td>{{ event.title }}</td>
-              {% if event.location %}
-              <td>
-                <span><b>Location: </b></span>{{ event.location }}
-              </td>
-              {% endif %} {% if event.info %}
-              <td>
-                {{ event.info | markdown | safe }}
-              </td>
-              {% endif %}
-            </tr>
-            {% endfor %}
-          </table>
-        </div>
-      </section>
-      <section class="schedule">
-        <h2 class="xxl-text">Schedule</h2>
-        <table>
-          <tr class="header">
-            <th>Times</th>
-            <th>Type</th>
-            <th>Event</th>
-            <th>Location</th>
-            <th>Info</th>
-          </tr>
-          {% set eventColors = { "Presentation": "#2e0e0e", "Demo": "#0e2e26",
-          "Panel Discussion": "#210e2e", "Networking": "#0e1c2e" } %} {% for
-          event in events %}
-          <tr style="background: {{ eventColors[event.type] }}; color: white">
-            <td class="times">
-              <strong>{{ event.times }}</strong>
-            </td>
-            <td class="type">
-              {% if event.type %}
-              <b>{{ event.type | upper }}</b>
-              {% endif %}
-            </td>
-            <td>{{ event.title }}</td>
-            {% if event.location %}
-            <td>
-              {{ event.location }}
-            </td>
-            {% else %}
-            <td></td>
-            {% endif %} {% if event.info %}
-            <td>
-              {{ event.info | markdown | safe }}
-            </td>
-            {% else %}
-            <td></td>
-            {% endif %}
-          </tr>
-          {% endfor %}
-        </table>
-      </section>
-    </main>
-
-    {% include "components/footer.njk" %}
-  </body>
-</html>
+<section class="schedule-hero">
+  <div class="container">
+    <div class="text">
+      <img src="{{ image }}" alt="day graphic" />
+      <h1 class="xxl-text">{{ title }}</h1>
+      <a href="{{ invite }}" target="_blank"
+        ><button class="alt">Sign Up</button></a
+      >
+    </div>
+  </div>
+</section>
+<section class="description" style="background: white; color: black">
+  <div class="container">
+    <div class="text">
+      <p>{{ description }}</p>
+    </div>
+  </div>
+</section>
+<section class="mobile-schedule">
+  <div class="container">
+    <h2 class="xxl-text">Schedule</h2>
+    <table>
+      {% set eventColors = { "Presentation": "#2e0e0e", "Demo": "#0e2e26",
+      "Panel Discussion": "#210e2e", "Networking": "#0e1c2e" } %} {% for event
+      in events %}
+      <tr style="background: {{ eventColors[event.type] }}; color: white">
+        <td style="background: white; color: black">
+          {% if event.times %}
+          <strong>{{ event.times }}</strong>
+          {% endif %}
+        </td>
+        {% if event.type %}
+        <td>
+          <b>{{ event.type | upper }}</b>
+        </td>
+        {% endif %}
+        <td>{{ event.title }}</td>
+        {% if event.location %}
+        <td>
+          <span><b>Location: </b></span>{{ event.location }}
+        </td>
+        {% endif %} {% if event.info %}
+        <td>
+          {{ event.info | markdown | safe }}
+        </td>
+        {% endif %}
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</section>
+<section class="schedule">
+  <h2 class="xxl-text">Schedule</h2>
+  <table>
+    <tr class="header">
+      <th>Times</th>
+      <th>Type</th>
+      <th>Event</th>
+      <th>Location</th>
+      <th>Info</th>
+    </tr>
+    {% set eventColors = { "Presentation": "#2e0e0e", "Demo": "#0e2e26", "Panel
+    Discussion": "#210e2e", "Networking": "#0e1c2e" } %} {% for event in events
+    %}
+    <tr style="background: {{ eventColors[event.type] }}; color: white">
+      <td class="times">
+        <strong>{{ event.times }}</strong>
+      </td>
+      <td class="type">
+        {% if event.type %}
+        <b>{{ event.type | upper }}</b>
+        {% endif %}
+      </td>
+      <td>{{ event.title }}</td>
+      {% if event.location %}
+      <td>
+        {{ event.location }}
+      </td>
+      {% else %}
+      <td></td>
+      {% endif %} {% if event.info %}
+      <td>
+        {{ event.info | markdown | safe }}
+      </td>
+      {% else %}
+      <td></td>
+      {% endif %}
+    </tr>
+    {% endfor %}
+  </table>
+</section>
