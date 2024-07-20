@@ -636,6 +636,25 @@ section.alt {
   max-width: 120px;
 }
 
+.partnerlist .grid {
+  display: grid;
+  grid-template: auto / repeat(1, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.partnerlist .partner {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  border: 1px solid white;
+  padding: 1rem;
+  width: 100%;
+}
+
 .socials .container {
   display: flex;
   gap: 2rem;
@@ -773,6 +792,20 @@ ____________________________________*/
     top: -5rem;
     width: 20%;
     max-width: 220px;
+  }
+
+  .partnerlist .grid {
+    grid-template: auto / repeat(2, 1fr);
+  }
+
+  .partnerlist .partner {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    border: 1px solid white;
+    padding: 3rem;
+    width: 100%;
   }
 
   .schedule {

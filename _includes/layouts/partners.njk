@@ -3,9 +3,13 @@ layout: layouts/base.njk
 section: partners
 permalink: /partners/index.html
 ---
-<h1>{{ title }}</h1>
 
-{{ layoutContent | safe }}
+<section>
+  <div class="container">
+    <h1 class="xxl-text">{{ title }}</h1>
+    {{ layoutContent | safe }}
+  </div>
+</section>
 
-{% set partnerlist = collections.partners %}
-{% include "components/partnerlist.njk" %}
+{% set partnerlist = collections.partners %} {% include
+"components/partnerlist.njk" %}
