@@ -10,15 +10,15 @@
         <div class="container">
           <div class="text">
             <h1>{{ title }}</h1>
-            <img src="{{ image }}">
+            <img src="{{ image }}" />
           </div>
         </div>
       </section>
-      <section>
+      <section class="schedule">
         <div class="container">
           <h2>Schedule</h2>
           <table>
-            <tr>
+            <tr class="header">
               <th>Times</th>
               <th>Event</th>
               <th>Location</th>
@@ -26,22 +26,19 @@
             </tr>
             {% for event in events %}
             <tr>
-              <th>
+              <td style="background: white; color: black">
                 {% if event.times %}
-                {{ event.times | markdown | safe }}
+                <strong>{{ event.times }}</strong>
                 {% endif %}
-              </th>
-              <th>{{ event.title | markdown | safe }}</th>
-              <th>
-                {% if event.location %}
-                {{ event.location | markdown | safe }}
-                {% endif %}
-              </th>
-              <th>
-                {% if event.info %}
+              </td>
+              <td>{{ event.title }}</td>
+              {% if event.location %}
+              <td><span><b>Location: </b></span>{{ event.location }}</td>
+              {% endif %} {% if event.info %}
+              <td>
                 {{ event.info | markdown | safe }}
-                {% endif %}
-              </th>
+              </td>
+              {% endif %}
             </tr>
             {% endfor %}
           </table>

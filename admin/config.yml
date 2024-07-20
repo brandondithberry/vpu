@@ -27,6 +27,12 @@ collections:
             fields:
               - { label: Times, name: times, widget: string }
               - { label: Title, name: title, widget: string }
+              - label: "Type"
+                name: "type"
+                widget: "select"
+                options:
+                  ["Presentation", "Demo", "Panel Discussion", "Networking"]
+                required: false
               - {
                   label: Location,
                   name: location,
@@ -53,6 +59,12 @@ collections:
             fields:
               - { label: Times, name: times, widget: string }
               - { label: Title, name: title, widget: string }
+              - label: "Type"
+                name: "type"
+                widget: "select"
+                options:
+                  ["Presentation", "Demo", "Panel Discussion", "Networking"]
+                required: false
               - {
                   label: Location,
                   name: location,
@@ -107,5 +119,4 @@ collections:
       - { label: Place, name: place, widget: string }
       - { label: Address, name: address, widget: string }
       - { label: Days, name: days, widget: string }
-      - { label: Image, name: image, widget: image, required: false}
-
+      - { label: Image, name: image, widget: image, required: false }

@@ -242,8 +242,27 @@ button:hover {
   color: var(--background);
 }
 
-table {
+tr {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+th {
   border: 1px solid white;
+  font-weight: bold;
+  padding: 0.5rem;
+  color: black;
+  background: white;
+  margin: 0;
+}
+
+td {
+  border: 1px solid white;
+  font-weight: normal;
+  padding: 1rem;
+  margin: 0;
 }
 
 /* HEADER & MENU 
@@ -625,6 +644,27 @@ section.alt {
   gap: 2rem;
   place-content: center;
   place-items: center;
+}
+
+.schedule {
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+.schedule .container {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+}
+
+.schedule .header {
+  display: none;
+}
+
+.schedule table {
+  display: block;
 }
 
 footer {
