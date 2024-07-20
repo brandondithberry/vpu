@@ -74,6 +74,8 @@ module.exports = function (eleventyConfig) {
   // Passthrough copy for static assets
   eleventyConfig.addPassthroughCopy({ "favicon.ico": "favicon.ico" });
   eleventyConfig.addPassthroughCopy({ "static/img": "static/img" });
+  eleventyConfig.addPassthroughCopy({ "static/fonts": "static/fonts" })
+  eleventyConfig.addPassthroughCopy({ "static/video": "static/video" });
   eleventyConfig.addPassthroughCopy({ "admin/": "admin" });
   eleventyConfig.addPassthroughCopy({
     "/_includes/assets/css/main.css": "assets/css/main.css",
