@@ -35,13 +35,14 @@ events:
     type: Presentation
   - title: Break
     times: 11:00 AM - 11:15 AM
-  - title: "DEMO: 3D Virtual Production"
+  - title: 3D Virtual Production
     info: |-
       Presenter - Steve Giralt from The Garage
 
       Topics Covered: TBD
     location: The Garage
     times: 11:15 AM - 12:30 PM
+    type: Demo
   - title: Lunch Break at Industry City
     times: 12:30 PM - 1:30 PM
   - title: Virtual and On-Set lighting for Virtual Production
