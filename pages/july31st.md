@@ -1,35 +1,47 @@
 ---
-layout: /layouts/day.njk
-title: July 31st - Creative Professionals Schedule of Events
+title: "July 31st: Open to Creative Professionals"
+description: Join us for an immersive one-day event designed for creative
+  filmmaking professionals exploring the cutting-edge realm of Virtual
+  Production. This exclusive gathering will feature live demonstrations
+  showcasing the latest technologies, panel discussions with industry leaders,
+  and insightful presentations from experts at the forefront of virtual
+  filmmaking. Dive into the future of cinematography, gain hands-on experience
+  with state-of-the-art equipment, and connect with fellow professionals during
+  a lively networking happy hour. Don't miss this opportunity to expand your
+  knowledge and forge valuable connections in the dynamic world of Virtual
+  Production.
 events:
-  - title: "**8:30-9:30 AM** - Arrival"
+  - title: Arrival
     location: The Garage
-    info: |-
-      Continental breakfast (Sponsored by The Garage)
-
-      Coffee Bar (Sponsored by Lux Machina)
-  - title: "**9:30-10:00 AM** - PRESENTATION: Opening Remarks"
+    info: Continental breakfast (Sponsored by The Garage) and Coffee Bar (Sponsored
+      by Lux Machina)
+    times: 8:30 AM - 9:30 AM
+  - title: "PRESENTATION: Opening Remarks"
     location: The Garage
     info: |-
       Presenter - Steve Giralt from The Garage
 
       Topics Covered: TBD
-  - title: "**10:00-11:00** - PRESENTATION: **The Basics of Virtual Production**"
+    times: 9:30 AM - 10:00 AM
+  - title: "PRESENTATION: The Basics of Virtual Production"
     info: |-
       Presenter - Emilia Page from Lux Machina
 
       Topics Covered: TBD
     location: The Garage
-  - title: "**11:00 - 11:15** - Break"
-  - title: "**11:15-12:30 -** DEMO: **3D Virtual Production**"
+    times: 10:00 AM - 11:00 AM
+  - title: Break
+    times: 11:00 AM - 11:15 AM
+  - title: "DEMO: 3D Virtual Production"
     info: |-
       Presenter - Steve Giralt from The Garage
 
       Topics Covered: TBD
     location: The Garage
-  - title: "**12:30 - 1:30 - Lunch Break at Industry City**"
-  - title: "**1:30 - 2:45** - PANEL DISCUSSION: **Virtual and On-Set lighting for
-      Virtual Production**"
+    times: 11:15 AM - 12:30 PM
+  - title: Lunch Break at Industry City
+    times: 12:30 PM - 1:30 PM
+  - title: "PANEL DISCUSSION: Virtual and On-Set lighting for Virtual Production"
     location: Abel Theater
     info: |-
       Moderator: TBD
@@ -37,8 +49,10 @@ events:
       Panelists: TBD + Bio’s
 
       Topics Covered: TBD
-  - title: "**2:45 - 3:00  - Break**"
-  - title: "**3:00 - 4:00**  -  PANEL DISCUSSION: **TBD Panel #2 + Q&A**"
+    times: 1:30 PM - 2:45 PM
+  - title: Break
+    times: 2:45 PM - 3:00 PM
+  - title: "PANEL DISCUSSION: TBD Panel #2 + Q&A"
     location: Abel Theater
     info: |-
       Moderator: TBD
@@ -46,13 +60,17 @@ events:
       Panelists: TBD + Bio’s
 
       Topics Covered: TBD
-  - title: "**4:00 - 4:15 - Break / Move Back To The Garage**"
-  - title: "**4:15 - 5:00 -** DEMO: **Advanced Virtual Production Demo**"
+    times: 3:00 PM - 4:00 PM
+  - title: Break / Move Back To The Garage
+    times: 4:00 PM - 4:15 PM
+  - title: "DEMO: Advanced Virtual Production Demo"
     location: The Garage
     info: |-
       Presenter - Steve Giralt from The Garage
 
       Topics Covered: TBD
-  - title: "**5:00 - 7 PM - Networking Happy Hour** (Sponsored by Lux Lighting and
-      Kino Flo)"
+    times: 4:15 - 5:00
+  - title: Networking Happy Hour (Sponsored by Lux Lighting & Kino Flo)
+    times: 5:00 PM - 7 PM
+layout: /layouts/day.njk
 ---
