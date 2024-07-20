@@ -20,6 +20,7 @@
           <table>
             <tr class="header">
               <th>Times</th>
+              <th>Type</th>
               <th>Event</th>
               <th>Location</th>
               <th>Info</th>
@@ -31,6 +32,26 @@
                 <strong>{{ event.times }}</strong>
                 {% endif %}
               </td>
+              {% if event.type === "Presentation" %}
+              <td style="background: rgb(226, 90, 85); color: black;">
+                <b>PRESENTATION</b>
+              </td>
+              {% endif %}
+              {% if event.type === "Demo" %}
+              <td style="background: rgb(226, 170, 85); color: black;">
+                <b>DEMO</b>
+              </td>
+              {% endif %}
+              {% if event.type === "Panel Discussion" %}
+              <td style="background: rgb(181, 85, 226); color: black;">
+                <b>PANEL DISCUSSION</b>
+              </td>
+              {% endif %}
+              {% if event.type === "Networking" %}
+              <td style="background: rgb(85, 226, 191); color: black;">
+                <b>NETWORKING</b>
+              </td>
+              {% endif %}
               <td>{{ event.title }}</td>
               {% if event.location %}
               <td><span><b>Location: </b></span>{{ event.location }}</td>
