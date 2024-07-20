@@ -242,6 +242,10 @@ button:hover {
   color: var(--background);
 }
 
+table {
+  border: 1px solid white;
+}
+
 /* HEADER & MENU 
 ------------------------------------*/
 

@@ -6,19 +6,46 @@
     {% include "components/header.njk" %}
 
     <main>
-      <h1>{{ title }}</h1>
-      <ul>
-        {% for event in events %}
-        <li>
-          <strong>{{ event.title | markdown | safe }}</strong
-          ><br />
-          {% if event.location %}Location: {{ event.location | markdown | safe
-          }}<br />{% endif %} {% if event.info %}
-          {{ event.info | markdown | safe }}
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
+      <section>
+        <div class="container">
+          <div class="text">
+            <h1>{{ title }}</h1>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h3>Schedule</h3>
+          <table>
+            <tr>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Location</th>
+              <th>Info</th>
+            </tr>
+            {% for event in events %}
+            <tr>
+              <th>
+                {% if event.time %}
+                {{ event.time | markdown | safe }}
+                {% endif %}
+              </th>
+              <th>{{ event.title | markdown | safe }}</th>
+              <th>
+                {% if event.location %}
+                {{ event.location | markdown | safe }}
+                {% endif %}
+              </th>
+              <th>
+                {% if event.info %}
+                {{ event.info | markdown | safe }}
+                {% endif %}
+              </th>
+            </tr>
+            {% endfor %}
+          </table>
+        </div>
+      </section>
     </main>
 
     {% include "components/footer.njk" %}
