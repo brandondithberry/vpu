@@ -6,40 +6,37 @@
     {% include "components/header.njk" %}
 
     <main>
-      <section>
+      <section class="schedule-hero">
         <div class="container">
           <div class="text">
-            <h1>{{ title }}</h1>
-            <img src="{{ image }}" />
+            <h1 class="xxl-text">{{ title }}</h1>
+            <img src="{{ image }}" alt="day graphic" />
+          </div>
+        </div>
+      </section>
+      <section class="description" style="background: white; color: black">
+        <div class="container">
+          <div class="text">
+            <p>{{ description }}</p>
           </div>
         </div>
       </section>
       <section class="mobile-schedule">
         <div class="container">
-          <h2>Schedule</h2>
+          <h2 class="xxl-text">Schedule</h2>
           <table>
-            {% for event in events %}
-            <tr>
+            {% set eventColors = { "Presentation": "#2e0e0e", "Demo": "#0e2e26",
+            "Panel Discussion": "#210e2e", "Networking": "#0e1c2e" } %} {% for
+            event in events %}
+            <tr style="background: {{ eventColors[event.type] }}; color: white">
               <td style="background: white; color: black">
                 {% if event.times %}
                 <strong>{{ event.times }}</strong>
                 {% endif %}
               </td>
-              {% if event.type === "Presentation" %}
-              <td style="background: rgb(226, 90, 85); color: black">
-                <b>PRESENTATION</b>
-              </td>
-              {% endif %} {% if event.type === "Demo" %}
-              <td style="background: rgb(226, 170, 85); color: black">
-                <b>DEMO</b>
-              </td>
-              {% endif %} {% if event.type === "Panel Discussion" %}
-              <td style="background: rgb(181, 85, 226); color: black">
-                <b>PANEL DISCUSSION</b>
-              </td>
-              {% endif %} {% if event.type === "Networking" %}
-              <td style="background: rgb(85, 226, 191); color: black">
-                <b>NETWORKING</b>
+              {% if event.type %}
+              <td>
+                <b>{{ event.type | upper }}</b>
               </td>
               {% endif %}
               <td>{{ event.title }}</td>
@@ -58,7 +55,7 @@
         </div>
       </section>
       <section class="schedule">
-        <h2>Schedule</h2>
+        <h2 class="xxl-text">Schedule</h2>
         <table>
           <tr class="header">
             <th>Times</th>
@@ -67,42 +64,18 @@
             <th>Location</th>
             <th>Info</th>
           </tr>
-          {% for event in events %}
-          <tr>
-            <td
-              class="times"
-              style="background: white; color: black; border: 1px solid black"
-            >
+          {% set eventColors = { "Presentation": "#2e0e0e", "Demo": "#0e2e26",
+          "Panel Discussion": "#210e2e", "Networking": "#0e1c2e" } %} {% for
+          event in events %}
+          <tr style="background: {{ eventColors[event.type] }}; color: white">
+            <td class="times">
               <strong>{{ event.times }}</strong>
             </td>
-            {% if event.type === "Presentation" %}
-            <td class="type" style="background: rgb(226, 90, 85); color: black">
-              <b>PRESENTATION</b>
+            <td class="type">
+              {% if event.type %}
+              <b>{{ event.type | upper }}</b>
+              {% endif %}
             </td>
-            {% elif event.type === "Demo" %}
-            <td
-              class="type"
-              style="background: rgb(226, 170, 85); color: black"
-            >
-              <b>DEMO</b>
-            </td>
-            {% elif event.type === "Panel Discussion" %}
-            <td
-              class="type"
-              style="background: rgb(181, 85, 226); color: black"
-            >
-              <b>PANEL DISCUSSION</b>
-            </td>
-            {% elif event.type === "Networking" %}
-            <td
-              class="type"
-              style="background: rgb(85, 226, 191); color: black"
-            >
-              <b>NETWORKING</b>
-            </td>
-            {% else %}
-            <td class="type"></td>
-            {% endif %}
             <td>{{ event.title }}</td>
             {% if event.location %}
             <td>

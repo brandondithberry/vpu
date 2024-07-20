@@ -101,7 +101,7 @@ h3:not(:first-child) {
 }
 
 .xxl-text {
-  font-size: 1.7rem;
+  font-size: 2.4rem;
 }
 
 .xl-text {
@@ -647,6 +647,12 @@ section.alt {
   display: none;
 }
 
+.schedule-hero img {
+  width: 100%;
+  max-width: 450px;
+  padding: 0 0.5rem;
+}
+
 .mobile-schedule {
   display: flex;
   place-content: center;
@@ -669,7 +675,7 @@ section.alt {
 .mobile-schedule td {
   display: block !important;
   padding: 0.5rem;
-  border: 1px solid white;
+  border: 1px solid #fff;
 }
 
 footer {
@@ -705,6 +711,22 @@ ____________________________________*/
 @media screen and (min-width: 990px) {
   :root {
     font-size: 1.1rem;
+  }
+
+  .xxl-text {
+    font-size: 2.4rem;
+  }
+  
+  .xl-text {
+    font-size: 1.5rem;
+  }
+  
+  .lg-text {
+    font-size: 1.1rem;
+  }
+  
+  .sm-text {
+    font-size: 0.8rem;
   }
 
   header .container {
@@ -760,7 +782,7 @@ ____________________________________*/
 
   .schedule th,
   .schedule td {
-    border: 1px solid white;
+    border: 1px solid #fff;
     padding: 0.5rem;
   }
 
