@@ -17,30 +17,33 @@ events:
     info: Catered Breakfast (Sponsored by The Garage) and Coffee Bar (Sponsored by
       Lux Machina)
     times: 8:30 AM - 9:30 AM
-  - title: "PRESENTATION: Opening Remarks"
+  - title: Opening Remarks
     info: |-
       Presenter - Steve Giralt from The Garage and Eric Trabb from NAB
 
       Topics Covered: TBD
     location: The Garage
     times: 9:30 AM - 10:00 AM
-  - title: "PRESENTATION: The Basics of Virtual Production"
+    type: Presentation
+  - title: The Basics of Virtual Production
     location: The Garage
     info: |-
       Presenter - Emilia Page from Lux Machina
 
       Topics Covered: TBD
     times: 10:00 AM - 10:30 AM
-  - title: "DEMO: 3D Virtual Production"
+    type: Presentation
+  - title: 3D Virtual Production
     location: The Garage
     info: |-
       Presenter - Steve Giralt from The Garage
 
       Topics Covered: TBD
     times: 10:30 AM - 11:30 AM
+    type: Demo
   - title: Move to Abel Theater
     times: 11:30 AM - 12:00 PM
-  - title: "PANEL DISCUSSION: Virtual Production Workflow and Budgeting"
+  - title: Virtual Production Workflow and Budgeting
     location: Abel Theater
     info: |-
       Moderator: TBD
@@ -49,9 +52,10 @@ events:
 
       Topics Covered: TBD
     times: 12:00 PM - 1:00 PM
+    type: Panel Discussion
   - title: Catered Lunch (Sponsored by Abel Cine)
     times: 1:00 PM - 2:00 PM
-  - title: "PANEL DISCUSSION: Could I shoot ‘This’ with Virtual Production?"
+  - title: Could I shoot ‘This’ with Virtual Production?
     location: Abel Theater
     info: |-
       Moderator: TBD
@@ -60,20 +64,23 @@ events:
 
       Topics Covered: TBD
     times: 2:00 PM - 3:00 PM
+    type: Panel Discussion
   - title: Move to NYU Tisch Martin Scorsese Virtual Production Center
     times: 3:00 PM - 3:30 PM
-  - title: "DEMO: Martin Scorsese Virtual Production Center Demo with RDX / Rosco"
+  - title: Martin Scorsese Virtual Production Center Demo with RDX / Rosco
     location: "NYU Tisch Martin Scorsese Virtual Production Center "
     info: |-
       Presenter - Sang-Jin Bae from NYU
 
       Topics Covered: TBD
     times: 3:30 PM - 4:30 PM
+    type: Demo
   - title: Return to The Garage
     times: 4:30 PM - 5:00 PM
   - title: "HAPPY HOUR + DEMO: Interactive Advanced Virtual Production Demo and
       Networking Happy Hour (sponsored by Industry City)"
     location: The Garage
     times: 5:00 PM - 8:00 PM
+    type: Demo
 layout: /layouts/day.njk
 ---
