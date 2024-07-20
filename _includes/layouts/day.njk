@@ -10,15 +10,16 @@
         <div class="container">
           <div class="text">
             <h1>{{ title }}</h1>
+            <img src="{{ image }}">
           </div>
         </div>
       </section>
       <section>
         <div class="container">
-          <h3>Schedule</h3>
+          <h2>Schedule</h2>
           <table>
             <tr>
-              <th>Time</th>
+              <th>Times</th>
               <th>Event</th>
               <th>Location</th>
               <th>Info</th>
@@ -26,8 +27,8 @@
             {% for event in events %}
             <tr>
               <th>
-                {% if event.time %}
-                {{ event.time | markdown | safe }}
+                {% if event.times %}
+                {{ event.times | markdown | safe }}
                 {% endif %}
               </th>
               <th>{{ event.title | markdown | safe }}</th>
