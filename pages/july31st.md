@@ -75,7 +75,7 @@ events:
       Presenter - Steve Giralt from The Garage
 
       Topics Covered: TBD
-    times: 4:15 - 5:00
+    times: 4:15 PM - 5:00 PM
     type: Demo
   - title: Happy Hour (Sponsored by Lux Lighting & Kino Flo)
     times: 5:00 PM - 7 PM
