@@ -647,6 +647,17 @@ section.alt {
   display: none;
 }
 
+.schedule-hero .text {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+}
+
+.schedule-hero a {
+  margin-top: 2rem;
+}
+
 .schedule-hero img {
   width: 100%;
   max-width: 450px;
