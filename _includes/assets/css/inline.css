@@ -654,10 +654,6 @@ section.alt {
   place-items: center;
 }
 
-.schedule-hero a {
-  margin-top: 2rem;
-}
-
 .schedule-hero img {
   width: 100%;
   max-width: 450px;
