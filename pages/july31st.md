@@ -1,5 +1,6 @@
 ---
 title: "July 31st: Open to Creative Professionals"
+image: /static/img/titleaug1st.jpg
 description: Join us for an immersive one-day event designed for creative
   filmmaking professionals exploring the cutting-edge realm of Virtual
   Production. This exclusive gathering will feature live demonstrations
