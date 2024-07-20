@@ -114,7 +114,7 @@ collections:
     folder: "locations"
     create: true
     slug: "{{slug}}"
-    identifier_field: location
+    identifier_field: place
     fields:
       - { label: Place, name: place, widget: string }
       - { label: Address, name: address, widget: string }
