@@ -17,20 +17,22 @@ events:
     info: Continental breakfast (Sponsored by The Garage) and Coffee Bar (Sponsored
       by Lux Machina)
     times: 8:30 AM - 9:30 AM
-  - title: "PRESENTATION: Opening Remarks"
+  - title: Opening Remarks
     location: The Garage
     info: |-
       Presenter - Steve Giralt from The Garage
 
       Topics Covered: TBD
     times: 9:30 AM - 10:00 AM
-  - title: "PRESENTATION: The Basics of Virtual Production"
+    type: Presentation
+  - title: The Basics of Virtual Production
     info: |-
       Presenter - Emilia Page from Lux Machina
 
       Topics Covered: TBD
     location: The Garage
     times: 10:00 AM - 11:00 AM
+    type: Presentation
   - title: Break
     times: 11:00 AM - 11:15 AM
   - title: "DEMO: 3D Virtual Production"
@@ -42,7 +44,7 @@ events:
     times: 11:15 AM - 12:30 PM
   - title: Lunch Break at Industry City
     times: 12:30 PM - 1:30 PM
-  - title: "PANEL DISCUSSION: Virtual and On-Set lighting for Virtual Production"
+  - title: Virtual and On-Set lighting for Virtual Production
     location: Abel Theater
     info: |-
       Moderator: TBD
@@ -51,9 +53,10 @@ events:
 
       Topics Covered: TBD
     times: 1:30 PM - 2:45 PM
+    type: Panel Discussion
   - title: Break
     times: 2:45 PM - 3:00 PM
-  - title: "PANEL DISCUSSION: TBD Panel #2 + Q&A"
+  - title: "TBD Panel #2 + Q&A"
     location: Abel Theater
     info: |-
       Moderator: TBD
@@ -62,16 +65,19 @@ events:
 
       Topics Covered: TBD
     times: 3:00 PM - 4:00 PM
+    type: Panel Discussion
   - title: Break / Move Back To The Garage
     times: 4:00 PM - 4:15 PM
-  - title: "DEMO: Advanced Virtual Production Demo"
+  - title: Advanced Virtual Production Demo
     location: The Garage
     info: |-
       Presenter - Steve Giralt from The Garage
 
       Topics Covered: TBD
     times: 4:15 - 5:00
-  - title: Networking Happy Hour (Sponsored by Lux Lighting & Kino Flo)
+    type: Demo
+  - title: Happy Hour (Sponsored by Lux Lighting & Kino Flo)
     times: 5:00 PM - 7 PM
+    type: Networking
 layout: /layouts/day.njk
 ---
