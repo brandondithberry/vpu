@@ -1,5 +1,5 @@
 ---
-title: "July 31st: Open to Creative Professionals"
+title: July 31st
 image: /static/img/titleaug1st.jpg
 description: Join us for an immersive one-day event designed for creative
   filmmaking professionals exploring the cutting-edge realm of Virtual

@@ -1,5 +1,5 @@
 ---
-title: "Aug 1: Open to Advertising & Marketing Industry Professionals"
+title: August 1st
 image: /static/img/titlejuly31st.jpg
 description: Join us for an immersive one-day event crafted for advertising
   agency, corporate, and marketing professionals eager to explore the
