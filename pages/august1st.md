@@ -1,35 +1,45 @@
 ---
-layout: /layouts/day.njk
-title: Aug 1 - Advertising and Marketing Industry Professionals Schedule of Events
+title: "Aug 1: Open to Advertising & Marketing Industry Professionals"
+description: Join us for an immersive one-day event crafted for advertising
+  agency, corporate, and marketing professionals eager to explore the
+  transformative realm of Virtual Production. This exclusive gathering will
+  feature live demonstrations showcasing the latest technologies, panel
+  discussions with industry leaders, and insightful presentations from experts
+  at the forefront of Virtual Production. Discover how Virtual Production can
+  enhance visual storytelling and it’s impact on production workflows and shoot
+  budgets. Connect with peers during a lively networking happy hour and gain
+  invaluable insights to empower your projects in the evolving landscape of film
+  production.
 events:
-  - title: "**8:30-9:30 AM** - Arrival"
+  - title: Arrival
     location: The Garage
-    info: |-
-      Catered Breakfast (Sponsored by The Garage)
-
-      Coffee Bar (Sponsored by Lux Machina)
-  - title: "**9:30-10:00 AM -** PRESENTATION: Opening Remarks"
+    info: Catered Breakfast (Sponsored by The Garage) and Coffee Bar (Sponsored by
+      Lux Machina)
+    times: 8:30 AM - 9:30 AM
+  - title: "PRESENTATION: Opening Remarks"
     info: |-
       Presenter - Steve Giralt from The Garage and Eric Trabb from NAB
 
       Topics Covered: TBD
     location: The Garage
-  - title: "**10:00-10:30 -** PRESENTATION: **The Basics of Virtual Production**"
+    times: 9:30 AM - 10:00 AM
+  - title: "PRESENTATION: The Basics of Virtual Production"
     location: The Garage
     info: |-
       Presenter - Emilia Page from Lux Machina
 
       Topics Covered: TBD
-  - title: "**10:30-11:30** - DEMO: **3D Virtual Production**"
+    times: 10:00 AM - 10:30 AM
+  - title: "DEMO: 3D Virtual Production"
     location: The Garage
     info: |-
       Presenter - Steve Giralt from The Garage
 
       Topics Covered: TBD
-  - title: "**11:30 - 12:00 - Move to Abel Theater**"
-  - title:
-      "**12:00 - 1:00** - PANEL DISCUSSION: **Virtual Production Workflow and
-      Budgeting**"
+    times: 10:30 AM - 11:30 AM
+  - title: Move to Abel Theater
+    times: 11:30 AM - 12:00 PM
+  - title: "PANEL DISCUSSION: Virtual Production Workflow and Budgeting"
     location: Abel Theater
     info: |-
       Moderator: TBD
@@ -37,10 +47,10 @@ events:
       Panelists: TBD + Bio’s
 
       Topics Covered: TBD
-  - title: "**1:00 - 2:00 -** Catered Lunch (Sponsored by Abel Cine)"
-  - title:
-      "**2:00 - 3:00** - PANEL DISCUSSION: **Could I shoot ‘This’ with Virtual
-      Production?**"
+    times: 12:00 PM - 1:00 PM
+  - title: Catered Lunch (Sponsored by Abel Cine)
+    times: 1:00 PM - 2:00 PM
+  - title: "PANEL DISCUSSION: Could I shoot ‘This’ with Virtual Production?"
     location: Abel Theater
     info: |-
       Moderator: TBD
@@ -48,18 +58,21 @@ events:
       Panelists: TBD + Bio’s
 
       Topics Covered: TBD
-  - title: 3:00 - 3:30 **\- Move to NYU Tisch Martin Scorsese Virtual Production
-      Center**
-  - title:
-      "**3:30 - 4:30** - DEMO: **Martin Scorsese Virtual Production Center Demo
-      with RDX / Rosco**"
+    times: 2:00 PM - 3:00 PM
+  - title: Move to NYU Tisch Martin Scorsese Virtual Production Center
+    times: 3:00 PM - 3:30 PM
+  - title: "DEMO: Martin Scorsese Virtual Production Center Demo with RDX / Rosco"
     location: "NYU Tisch Martin Scorsese Virtual Production Center "
     info: |-
       Presenter - Sang-Jin Bae from NYU
 
       Topics Covered: TBD
-  - title: 4:30 - 5:00 - **Return to The Garage**
-  - title: "**5:00 - 8:00** - HAPPY HOUR + DEMO: **Interactive Advanced Virtual
-      Production Demo and Networking Happy Hour (sponsored by Industry City)**"
+    times: 3:30 PM - 4:30 PM
+  - title: Return to The Garage
+    times: 4:30 PM - 5:00 PM
+  - title: "HAPPY HOUR + DEMO: Interactive Advanced Virtual Production Demo and
+      Networking Happy Hour (sponsored by Industry City)"
     location: The Garage
+    times: 5:00 PM - 8:00 PM
+layout: /layouts/day.njk
 ---
