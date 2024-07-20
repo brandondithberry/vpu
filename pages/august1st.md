@@ -1,5 +1,6 @@
 ---
 title: "Aug 1: Open to Advertising & Marketing Industry Professionals"
+image: /static/img/titlejuly31st.jpg
 description: Join us for an immersive one-day event crafted for advertising
   agency, corporate, and marketing professionals eager to explore the
   transformative realm of Virtual Production. This exclusive gathering will
