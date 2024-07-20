@@ -377,7 +377,7 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 4rem 1.5rem;
+  padding: 4rem 1rem;
   justify-content: center;
   align-items: start;
   overflow-x: hidden;
@@ -651,7 +651,7 @@ section.alt {
   place-content: center;
   place-items: center;
   border: 1px solid white;
-  padding: 1rem;
+  padding: 2rem 1rem;
   width: 100%;
 }
 
