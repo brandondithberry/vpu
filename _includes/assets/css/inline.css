@@ -87,6 +87,12 @@ h1 {
   font-size: 2rem;
 }
 
+h1:first-child,
+h2:first-child,
+h3:first-child {
+  margin-block-start: 0;
+}
+
 h1,
 h2 {
   font-family: "GARAGE GLITCH";
