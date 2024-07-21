@@ -2,6 +2,7 @@
 speaker: Steve Giralt
 company: The Garage
 role: Founder / Director
+linkedin: https://www.linkedin.com/in/stevegiralt/
 mainviewpoint: Creative Technology
 dates: July 31-August 1
 type:
