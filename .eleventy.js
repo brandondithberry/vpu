@@ -96,6 +96,10 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByGlob("locations/*.md");
   });
 
+  eleventyConfig.addCollection("days", function (collection) {
+    return collection.getFilteredByGlob("days/*.md");
+  });
+
   /* Markdown Plugins */
   let options = {
     html: true,

@@ -1,10 +1,47 @@
 <footer>
-  <div class="container">
-    <p class="sm-text">© 2024 The Garage, LLC. - All Rights Reserved</p>
-    <p class="sm-text">Created by <a href="https://brandondithberry.com"><u>Brandon Dith-Berry</u></a></p>
-  </div>
-  {% set js %} {% include "assets/js/inline.js" %} {% endset %}
-  <script>
-    {{ js | jsmin | safe }}
-  </script>
+  <section class="signup">
+    <div class="container">
+      <div class="day">
+        <h2 class="xl-text">July 31st</h2>
+        <img
+          src="/static/img/title-july31st.jpg"
+          alt="July 31st Logo"
+          width="200"
+          style="margin-bottom: 1.5rem"
+        />
+        <a href="https://partiful.com/e/sD1PdjH8TfC9mcJ8D8R8" target="_blank"
+          ><button class="alt">Sign Up</button></a
+        >
+      </div>
+      <div class="day">
+        <h2 class="xl-text">August 1st</h2>
+        <img
+          src="/static/img/title-august1st.jpg"
+          alt="July 31st Logo"
+          width="240"
+          style="margin-bottom: 1.5rem"
+        />
+        <a href="https://partiful.com/e/XOlIrrHeYdzlpffgeyrv" target="_blank"
+          ><button class="alt">Sign Up</button></a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="legals">
+    <div class="copyright">
+      <p class="sm-text">© 2024 The Garage, LLC. - All Rights Reserved</p>
+      <p class="sm-text">
+        Site by
+        <a href="https://brandondithberry.com"><u>Brandon Dith-Berry</u></a>
+      </p>
+    </div>
+    <div class="socials">
+      <a href="https://www.instagram.com/the_garage.tv" target="_blank"
+        ><img src="/static/img/instagram.png" alt="Instagram" width="40"
+      /></a>
+      <a href="https://www.tiktok.com/@the_garage.tv" target="_blank"
+        ><img src="/static/img/tiktok.png" alt="TikTok" width="40"
+      /></a>
+    </div>
+  </section>
 </footer>

@@ -167,6 +167,11 @@ collections:
         options: ["Moderator", "Panelist"]
       - { label: Bio, name: bio, widget: markdown, required: false }
       - { label: Headshot, name: headshot, widget: image, required: false }
+      - { label: Layout,
+          name: layout,
+          widget: hidden,
+          default: /layouts/speaker.njk,
+        }
   - name: "locations"
     label: "Locations"
     folder: "locations"

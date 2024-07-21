@@ -97,6 +97,7 @@ h1,
 h2 {
   font-family: "GARAGE GLITCH";
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 h3,
@@ -343,13 +344,69 @@ span.active {
   font-size: 1.2rem;
 }
 
+/* #endregion */
+
+/* #region FOOTER */
+
 footer {
   display: flex;
+  flex-direction: column;
   width: 100%;
   text-align: center;
   place-content: center;
   place-items: center;
+}
+
+footer .signup {
   padding: 1rem;
+}
+
+footer .signup .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  place-items: center;
+  place-content: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+footer .signup .day {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+}
+
+footer .legals {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  justify-content: space-between;
+}
+
+footer .copyright {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+footer .socials {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 1rem;
+  place-items: center;
+  place-content: center;
+  margin-top: 1rem;
 }
 
 /* #endregion */
@@ -719,9 +776,10 @@ section .overlay {
 }
 
 .speakers .speaker {
+  display: block;
   padding: 2rem;
   background: white;
-  color: black;
+  color: black !important;
 }
 
 .speakers .speaker img {
@@ -795,6 +853,30 @@ section .overlay {
   .speakers .container {
     grid-template: auto / repeat(2, 1fr);
   }
+  
+  footer .signup .container {
+    flex-direction: row
+  }
+  
+  footer .legals {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .copyright {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  footer .socials {
+    width: auto;
+    margin-top: 0;
+  }
 }
 
 /* #endregion */
@@ -809,15 +891,15 @@ section .overlay {
   .xxl-text {
     font-size: 2.4rem;
   }
-  
+
   .xl-text {
     font-size: 1.5rem;
   }
-  
+
   .lg-text {
     font-size: 1.1rem;
   }
-  
+
   .sm-text {
     font-size: 0.8rem;
   }
