@@ -5,5 +5,5 @@ company: Le Prop Room
 role: Production Designer
 linkedin: https://www.linkedin.com/in/paola-andrea-33836139/
 mainviewpoint: VAD / Production Design
-headshot: /static/img/emilia-page.jpeg
+headshot: /static/img/paola-andrea.jpeg
 ---
