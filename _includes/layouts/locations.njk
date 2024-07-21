@@ -1,17 +1,53 @@
-<!DOCTYPE html>
-<html {% if section %} data-current="{{ section }}" {% endif %} lang="en">
-  {% include "components/head.njk" %}
+---
+layout: layouts/base.njk
+section: locations
+permalink: /locations/index.html
+---
 
-  <body>
-    {% include "components/header.njk" %}
-
-    <main>
-      <div class="text">
-        <h1>{{ title }}</h1>
-        {{ layoutContent | safe }}
+<section
+  style="
+    background: url(/static/img/industry-city.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 8% 1rem;
+  "
+>
+  <div class="overlay">
+    <div class="container">
+      <h1 class="xxl-text">{{ title }}</h1>
+    </div>
+  </div>
+</section>
+{% set locationslist = collections.locations %}
+<section class="locationslist">
+  <div class="container">
+    {% for location in locationslist %}
+    <div class="location">
+      <div class="textbox">
+        <h3>
+          {% if location.data.place %}
+          {{ location.data.place }}
+          {% else %} Untitled {% endif %}
+        </h3>
+        {% if location.data.address %}
+        <p>
+          {{ location.data.address }}
+        </p>
+        {% endif %} {% if location.data.days %}
+        <h4>
+          {{ location.data.days }}
+        </h4>
       </div>
-    </main>
-
-    {% include "components/footer.njk" %}
-  </body>
-</html>
+      {% if location.data.image %}
+      <div
+        class="imagebox"
+        style="background-image: url({{ location.data.image }});"
+      ></div>
+      {% endif %}
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+  <div class="container">
+    <div class="map"></div>
+  </div>
+</section>

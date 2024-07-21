@@ -8,4 +8,21 @@ permalink: /blog/index.html
 {{ layoutContent | safe }}
 
 {% set speakerlist = collections.speakers %}
-{% include "components/speakerlist.njk" %}
+<section>
+	{% for speaker in speakerlist | reverse %}
+		<div{% if speaker.url == url %} data-current="current item"{% endif %}>
+			<h3>
+				{% if speaker.data.title %}
+					{{ speaker.data.title }}
+				{% else %}
+					Untitled
+				{% endif %}
+			</h3>
+			{% if speaker.data.summary %}
+				<p>
+					{{ speaker.data.summary }}
+				</p>
+			{% endif %}
+			</div>
+	{% endfor %}
+</section>

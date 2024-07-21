@@ -11,5 +11,25 @@ permalink: /partners/index.html
   </div>
 </section>
 
-{% set partnerlist = collections.partners %} {% include
-"components/partnerlist.njk" %}
+{% set partnerlist = collections.partners %}
+<section class="partnerlist">
+  <div class="grid">
+    {% for partner in partnerlist %}
+    <div class="partner">
+      <img src="{{ partner.data.logo }}" alt="partner logo" width="180px" />
+      <h3>
+        {% if partner.data.title %}
+        {{ partner.data.title }}
+        {% else %} Untitled {% endif %}
+      </h3>
+      {% if partner.data.blurb %}
+      <p>
+        {{ partner.data.blurb }}
+      </p>
+      <a href="{{ partner.data.website }}" target="_blank"
+        style="margin-top: 1rem;"><button class="alt">Visit Partner Site</button></a
+      >
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+</section>

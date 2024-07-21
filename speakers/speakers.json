@@ -1,8 +1,0 @@
-{
-    "layout": "layouts/speaker.njk",
-    "permalink": "speakers/{{ title | slug }}/index.html",
-    "author": "Anonymous",
-    "tags": [
-      "speaker"
-    ]
-  }
