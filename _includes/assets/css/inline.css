@@ -709,6 +709,7 @@ section .overlay {
   display: grid;
   grid-template: auto / repeat(3, 1fr);
   gap: 1rem;
+  max-width: 1200px;
 }
 
 .speakers .speaker {
