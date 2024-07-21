@@ -1,3 +1,5 @@
+/* #region BASE */
+
 :root {
   --primary: white;
   --secondary: rgb(228, 179, 19);
@@ -155,42 +157,6 @@ nav li a[data-current="current item"] {
   background-color: white;
 }
 
-/* Posts List */
-article {
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid var(--secondary);
-}
-
-main > section > article > * {
-  margin: 0.5em 0;
-}
-
-/* Post Tags */
-a[rel="tag"],
-a[rel="tag"]:visited {
-  display: inline-block;
-  vertical-align: text-top;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.625em;
-  padding: 0 0.5em;
-  line-height: 2em;
-  height: 2em;
-  border: 1px solid var(--secondary);
-  background-color: var(--secondary);
-  color: var(--primary);
-  border-radius: 0.25em;
-  text-decoration: none;
-  margin: 0 0.5em 0.5em 0;
-}
-
-a[rel="tag"]:hover {
-  border: 1px solid var(--primary);
-  background-color: var(--primary);
-  color: var(--secondary);
-}
-
 /* Contact Form */
 form {
   display: grid;
@@ -242,8 +208,9 @@ button:hover {
   color: var(--background);
 }
 
-/* HEADER & MENU 
-------------------------------------*/
+/* #endregion */
+
+/* #region HEADER & MENU */
 
 header {
   position: sticky;
@@ -370,8 +337,18 @@ span.active {
   font-size: 1.2rem;
 }
 
-/* SECTIONS
-------------------------------------*/
+footer {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  padding: 1rem;
+}
+
+/* #endregion */
+
+/* #region SECTIONS */
 
 section {
   position: relative;
@@ -389,7 +366,19 @@ section {
   text-align: center;
 }
 
-.overlay {
+section .container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 990px;
+}
+
+section.alt {
+  background: var(--primary);
+  color: var(--background);
+  border-color: blacks;
+}
+
+section .overlay {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -401,6 +390,16 @@ section {
   place-content: center;
   background: rgba(0, 0, 0, 0.6);
   z-index: 0;
+}
+
+/* #endregion */
+
+/* #region HERO */
+
+.hero {
+  border-bottom: 1px solid white;
+  height: 12rem;
+  overflow: hidden;
 }
 
 .hero .overlay {
@@ -421,24 +420,6 @@ section {
   100% {
     background: rgba(0, 0, 0, 0);
   }
-}
-
-section .container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 990px;
-}
-
-section.alt {
-  background: var(--primary);
-  color: var(--background);
-  border-color: blacks;
-}
-
-.hero {
-  border-bottom: 1px solid white;
-  height: 12rem;
-  overflow: hidden;
 }
 
 .hero video {
@@ -527,6 +508,10 @@ section.alt {
   }
 }
 
+/* #endregion */
+
+/* #region HOMEPAGE */
+
 .about {
   text-align: center;
 }
@@ -571,6 +556,10 @@ section.alt {
   width: 100%;
   max-width: 500px;
 }
+
+/* #endregion */
+
+/* #region LOCATIONS */
 
 .locations .container {
   display: flex;
@@ -641,6 +630,10 @@ section.alt {
   background-size: cover;
 }
 
+/* #endregion */
+
+/* #region PARTNERS */
+
 .partners .container div {
   display: grid;
   place-content: center;
@@ -706,6 +699,12 @@ section.alt {
   place-items: center;
 }
 
+/* #endregion 
+
+/* #region SCHEDULE */
+
+/* #region SCHEDULE */
+
 .schedule {
   display: none;
 }
@@ -748,17 +747,9 @@ section.alt {
   border: 1px solid #fff;
 }
 
-footer {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  place-content: center;
-  place-items: center;
-  padding: 1rem;
-}
+/* #endregion */
 
-/* TABLET STYLING
-____________________________________*/
+/* #region TABLET STYLING */
 
 @media screen and (min-width: 768px) {
   header .container {
@@ -775,8 +766,9 @@ ____________________________________*/
   }
 }
 
-/* DESKTOP STYLING
-____________________________________*/
+/* #endregion */
+
+/* #region DESKTOP STYLING */
 
 @media screen and (min-width: 990px) {
   :root {
@@ -908,3 +900,5 @@ ____________________________________*/
     background-position: center;
   }
 }
+
+/* #endregion */

@@ -40,6 +40,31 @@ collections:
                   widget: string,
                   required: false,
                 }
+              - label: "Presenter"
+                name: "presenter"
+                widget: "relation"
+                collection: "speakers"
+                search_fields: ["speaker"]
+                value_field: "speaker"
+                display_fields: ["speaker", "company", "bio"]
+                required: false
+              - label: "Moderator"
+                name: "moderator"
+                widget: "relation"
+                collection: "speakers"
+                search_fields: ["speaker"]
+                value_field: "speaker"
+                display_fields: ["speaker", "company", "bio"]
+                required: false
+              - label: "Panelists"
+                name: "panelists"
+                widget: "relation"
+                collection: "speakers"
+                search_fields: ["speaker"]
+                value_field: "speaker"
+                display_fields: ["speaker", "company", "bio"]
+                multiple: true
+                required: false
               - { label: Info, name: info, widget: markdown, required: false }
           - {
               label: Layout,
@@ -73,6 +98,31 @@ collections:
                   widget: string,
                   required: false,
                 }
+              - label: "Presenter"
+                name: "presenter"
+                widget: "relation"
+                collection: "speakers"
+                search_fields: ["speaker"]
+                value_field: "speaker"
+                display_fields: ["speaker", "company", "bio"]
+                required: false
+              - label: "Moderator"
+                name: "moderator"
+                widget: "relation"
+                collection: "speakers"
+                search_fields: ["speaker"]
+                value_field: "speaker"
+                display_fields: ["speaker", "company", "bio"]
+                required: false
+              - label: "Panelists"
+                name: "panelists"
+                widget: "relation"
+                collection: "speakers"
+                search_fields: ["speaker"]
+                value_field: "speaker"
+                display_fields: ["speaker", "company", "bio"]
+                multiple: true
+                required: false
               - { label: Info, name: info, widget: markdown, required: false }
           - {
               label: Layout,

@@ -37,6 +37,7 @@ permalink: /locations/index.html
         <h4>
           {{ location.data.days }}
         </h4>
+        {% endif %}
       </div>
       {% if location.data.image %}
       <div
@@ -45,7 +46,7 @@ permalink: /locations/index.html
       ></div>
       {% endif %}
     </div>
-    {% endif %} {% endfor %}
+    {% endfor %}
   </div>
   <div class="container">
     <div class="map"></div>

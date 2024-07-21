@@ -1,28 +1,58 @@
 ---
 layout: layouts/base.njk
-section: blog
-permalink: /blog/index.html
+section: speakers
+permalink: /speakers/index.html
 ---
-<h1>{{ title }}</h1>
 
-{{ layoutContent | safe }}
-
-{% set speakerlist = collections.speakers %}
-<section>
-	{% for speaker in speakerlist | reverse %}
-		<div{% if speaker.url == url %} data-current="current item"{% endif %}>
-			<h3>
-				{% if speaker.data.title %}
-					{{ speaker.data.title }}
-				{% else %}
-					Untitled
-				{% endif %}
-			</h3>
-			{% if speaker.data.summary %}
-				<p>
-					{{ speaker.data.summary }}
-				</p>
-			{% endif %}
-			</div>
-	{% endfor %}
+<section
+  style="
+    background: url(/static/img/industry-city.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 8% 1rem;
+  "
+>
+  <div class="overlay">
+    <div class="container">
+      <h1 class="xxl-text">{{ title }}</h1>
+    </div>
+  </div>
+</section>
+{% set speakerslist = collections.speakers %}
+<section class="speakerslist">
+  <div class="container">
+    {% for speaker in speakerslist %}
+    <div class="speaker">
+      <div class="textbox">
+        {% if speaker.data.speaker %}
+        <h3>
+          {{ speaker.data.speaker }}
+        </h3>
+        {% endif %} {% if speaker.data.role %}
+        <h4>
+          {{ speaker.data.role }}
+        </h4>
+        {% endif %} {% if speaker.data.company %}
+        <p>
+          {{ speaker.data.company }}
+        </p>
+        {% endif %} {% if speaker.data.mainviewpoint %}
+        <h5>{{ speaker.data.mainviewpoint }}</h5>
+        {% endif %} {% if speaker.data.dates %}
+        <h5>{{ speaker.data.dates }}</h5>
+        {% endif %} {% if speaker.data.type %}
+        <h5>{{ speaker.data.type }}</h5>
+        {% endif %} {% if speaker.data.bio %}
+        <p>{{ speaker.data.bio }}</p>
+        {% endif %}
+      </div>
+      {% if speaker.data.headshot %}
+      <img
+        class="imagebox"
+        src="{{ speaker.data.headshot }}"
+      ></div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
 </section>
