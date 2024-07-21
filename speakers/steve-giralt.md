@@ -13,4 +13,5 @@ bio: Steve Giralt, Director, DP, and Photographer, leads The Garage with a
   resonate globally.
 title: Steve Giralt
 headshot: /static/img/steve-giralt.jpeg
+layout: layouts/speaker.njk
 ---

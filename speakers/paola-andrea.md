@@ -6,4 +6,5 @@ role: Production Designer
 linkedin: https://www.linkedin.com/in/paola-andrea-33836139/
 mainviewpoint: VAD, Production Design
 headshot: /static/img/paola-andrea.jpeg
+layout: layouts/speaker.njk
 ---
