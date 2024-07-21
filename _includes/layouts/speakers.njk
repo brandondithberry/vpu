@@ -33,9 +33,10 @@ permalink: /speakers/index.html
       <p>{{ speaker.data.company }}</p>
       {% endif %} {% if speaker.data.mainviewpoint %}
       <h5>{{ speaker.data.mainviewpoint }}</h5>
-      {% endif %}
-	  {% if speaker.data.linkedin %}
-      <a href="{{ speaker.data.linkedin }}"><img src="/static/img/linkedin.png" alt="linkedin" width="40px"></a>
+      {% endif %} {% if speaker.data.linkedin %}
+      <a href="{{ speaker.data.linkedin }}" target="_blank"
+        ><img src="/static/img/linkedin.png" alt="linkedin" width="40px"
+      /></a>
       {% endif %}
     </div>
     {% endfor %}
