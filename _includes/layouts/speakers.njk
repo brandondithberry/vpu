@@ -19,35 +19,24 @@ permalink: /speakers/index.html
   </div>
 </section>
 {% set speakerslist = collections.speakers %}
-<section class="speakerslist">
+<section class="speakers">
   <div class="container">
     {% for speaker in speakerslist %}
     <div class="speaker">
-      <div class="textbox">
-        {% if speaker.data.headshot %}
-        <img class="imagebox" src="{{ speaker.data.headshot }}" width="200" />
-        {% endif %} {% if speaker.data.speaker %}
-        <h3>
-          {{ speaker.data.speaker }}
-        </h3>
-        {% endif %} {% if speaker.data.role %}
-        <h4>
-          {{ speaker.data.role }}
-        </h4>
-        {% endif %} {% if speaker.data.company %}
-        <p>
-          {{ speaker.data.company }}
-        </p>
-        {% endif %} {% if speaker.data.mainviewpoint %}
-        <h5>{{ speaker.data.mainviewpoint }}</h5>
-        {% endif %} {% if speaker.data.dates %}
-        <h5>{{ speaker.data.dates }}</h5>
-        {% endif %} {% if speaker.data.type %}
-        <h5>{{ speaker.data.type }}</h5>
-        {% endif %} {% if speaker.data.bio %}
-        <p>{{ speaker.data.bio }}</p>
-        {% endif %}
-      </div>
+      {% if speaker.data.headshot %}
+      <img src="{{ speaker.data.headshot }}" width="200" />
+      {% endif %} {% if speaker.data.speaker %}
+      <h2>{{ speaker.data.speaker }}</h2>
+      {% endif %} {% if speaker.data.role %}
+      <h4>{{ speaker.data.role }}</h4>
+      {% endif %} {% if speaker.data.company %}
+      <p>{{ speaker.data.company }}</p>
+      {% endif %} {% if speaker.data.mainviewpoint %}
+      <h5>{{ speaker.data.mainviewpoint }}</h5>
+      {% endif %}
+	  {% if speaker.data.linkedin %}
+      <a href="{{ speaker.data.linkedin }}"><img src="/static/img/linkedin.png" alt="linkedin" width="40px"></a>
+      {% endif %}
     </div>
     {% endfor %}
   </div>

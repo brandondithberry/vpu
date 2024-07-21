@@ -99,7 +99,7 @@ h4 {
 }
 
 h3:not(:first-child) {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .xxl-text {
@@ -702,6 +702,26 @@ section .overlay {
 /* #endregion 
 
 /* #region SCHEDULE */
+
+/* #region SPEAKERS */
+
+.speakers .container {
+  display: grid;
+  grid-template: auto / repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.speakers .speaker {
+  padding: 2rem;
+  background: white;
+  color: black;
+}
+
+.speakers .speaker img {
+  border-radius: 50rem;
+}
+
+/* #endregion */
 
 /* #region SCHEDULE */
 
