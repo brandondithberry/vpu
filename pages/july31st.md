@@ -26,6 +26,7 @@ events:
       Topics Covered: TBD
     times: 9:30 AM - 10:00 AM
     type: Presentation
+    presenter: Steve Giralt
   - title: The Basics of Virtual Production
     info: |-
       Presenter - Emilia Page from Lux Machina
