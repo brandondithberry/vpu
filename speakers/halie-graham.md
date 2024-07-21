@@ -2,6 +2,7 @@
 title: Halie Graham
 speaker: Halie Graham
 company: The Garage
-role: EP
-mainviewpoint: VP Production in Advertising
+role: Executive Producer
+linkedin: https://www.linkedin.com/in/haliegraham/
+mainviewpoint: Virtual Production in Advertising
 ---
