@@ -24,7 +24,9 @@ permalink: /speakers/index.html
     {% for speaker in speakerslist %}
     <div class="speaker">
       <div class="textbox">
-        {% if speaker.data.speaker %}
+        {% if speaker.data.headshot %}
+        <img class="imagebox" src="{{ speaker.data.headshot }}" width="200" />
+        {% endif %} {% if speaker.data.speaker %}
         <h3>
           {{ speaker.data.speaker }}
         </h3>
@@ -46,12 +48,6 @@ permalink: /speakers/index.html
         <p>{{ speaker.data.bio }}</p>
         {% endif %}
       </div>
-      {% if speaker.data.headshot %}
-      <img
-        class="imagebox"
-        src="{{ speaker.data.headshot }}"
-      ></div>
-      {% endif %}
     </div>
     {% endfor %}
   </div>
