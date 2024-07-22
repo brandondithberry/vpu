@@ -4,7 +4,7 @@ section: speakers
 permalink: /speakers/index.html
 ---
 
-{% set speakerslist = collections.speakers %}
+{% set speakers = collections.speakers %}
 <section
   style="
     background: url(/static/img/background.jpg);
@@ -21,8 +21,9 @@ permalink: /speakers/index.html
 </section>
 <section class="speakers">
   <div class="container">
-    {% for speaker in speakerslist %}
+    {% for speaker in speakers %}
     <div class="speaker">
+      <h1>{{ speaker.data.slug }}</h1>
       {% if speaker.data.headshot %}
       <img src="{{ speaker.data.headshot }}" width="200" />
       {% endif %} {% if speaker.data.speaker %}
@@ -32,7 +33,7 @@ permalink: /speakers/index.html
       {% endif %} {% if speaker.data.role %}
       <h4>{{ speaker.data.role }}</h4>
       {% endif %} {% if speaker.data.company %}
-      <p>{{ speaker.data.company }}</p>
+      <p class="lg-text">{{ speaker.data.company }}</p>
       {% endif %} {% if speaker.data.mainviewpoint %}
       <h5>{{ speaker.data.mainviewpoint }}</h5>
       {% endif %} {% if speaker.data.linkedin %}

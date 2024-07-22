@@ -84,6 +84,11 @@ module.exports = function (eleventyConfig) {
     "/_includes/assets/js/main.js": "assets/js/main.js",
   });
 
+  eleventyConfig.addFilter("log", value => {
+    console.log(value);
+    return JSON.stringify(value);
+  });
+
   eleventyConfig.addCollection("speakers", function (collection) {
     return collection.getFilteredByGlob("speakers/*.md");
   });
