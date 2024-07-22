@@ -1,20 +1,17 @@
 ---
 layout: layouts/base.njk
-section: schedule
+section: days
 ---
 
 <section class="schedule-hero">
   <div class="container">
-    <div class="text">
-      <img src="{{ image }}" alt="day graphic" />
-      <h1 class="xxl-text">{{ title }}</h1>
-      <a href="{{ invite }}" target="_blank"
-        ><button class="alt">Sign Up</button></a
-      >
-    </div>
+    <h1 class="xxl-text">{{ title }}</h1>
+    <a href="{{ invite }}" target="_blank"
+    class="lg-text"><button class="alt">Sign Up</button></a
+    >
   </div>
 </section>
-<section class="description" style="background: white; color: black">
+<section class="description">
   <div class="container">
     <div class="text">
       <p>{{ description }}</p>
@@ -55,7 +52,7 @@ section: schedule
   </div>
 </section>
 <section class="schedule">
-  <h2 class="xxl-text">Schedule</h2>
+  <h2 class="xl-text">Schedule</h2>
   <table>
     <tr class="header">
       <th>Times</th>

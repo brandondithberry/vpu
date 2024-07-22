@@ -8,48 +8,40 @@ const markdownItAttrs = require("markdown-it-attrs");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
-  // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
+  // Plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  // Merge data instead of overriding
-  // https://www.11ty.dev/docs/data-deep-merge/
+  // Deep merge data
   eleventyConfig.setDataDeepMerge(true);
 
-  // Add support for maintenance-free post authors
-  // Adds an authors collection using the author key in our post frontmatter
-  // Thanks to @pdehaan: https://github.com/pdehaan
-  eleventyConfig.addCollection("authors", (collection) => {
-    const blogs = collection.getFilteredByGlob("posts/*.md");
-    return blogs.reduce((coll, post) => {
-      const author = post.data.author;
-      if (!author) {
-        return coll;
-      }
-      if (!coll.hasOwnProperty(author)) {
-        coll[author] = [];
-      }
-      coll[author].push(post.data);
-      return coll;
-    }, {});
-  });
+  // Collections
+  const createCollectionWithSlug = (name, globPattern) => {
+    eleventyConfig.addCollection(name, (collection) => {
+      return collection.getFilteredByGlob(globPattern).map((item) => {
+        item.data.slug = item.fileSlug;
+        return item;
+      });
+    });
+  };
 
-  // Date formatting (human readable)
+  createCollectionWithSlug("speakers", "speakers/*.md");
+  createCollectionWithSlug("partners", "partners/*.md");
+  createCollectionWithSlug("locations", "locations/*.md");
+  
+  // Filters
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
   });
 
-  // Date formatting (machine readable)
   eleventyConfig.addFilter("machineDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
-  // Minify CSS
-  eleventyConfig.addFilter("cssmin", function (code) {
+  eleventyConfig.addFilter("cssmin", (code) => {
     return new CleanCSS({}).minify(code).styles;
   });
 
-  // Minify JS
-  eleventyConfig.addFilter("jsmin", function (code) {
+  eleventyConfig.addFilter("jsmin", (code) => {
     let minified = UglifyJS.minify(code);
     if (minified.error) {
       console.log("UglifyJS error: ", minified.error);
@@ -58,72 +50,47 @@ module.exports = function (eleventyConfig) {
     return minified.code;
   });
 
-  // Minify HTML output
-  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+  eleventyConfig.addFilter("markdown", (content) => {
+    return markdownLib.render(content);
+  });
+
+  // Transforms
+  eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath && outputPath.endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
+      return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
       });
-      return minified;
     }
     return content;
   });
 
   // Passthrough copy for static assets
-  eleventyConfig.addPassthroughCopy({ "favicon.ico": "favicon.ico" });
-  eleventyConfig.addPassthroughCopy({ "static/img": "static/img" });
-  eleventyConfig.addPassthroughCopy({ "static/fonts": "static/fonts" });
-  eleventyConfig.addPassthroughCopy({ "static/video": "static/video" });
-  eleventyConfig.addPassthroughCopy({ "admin/": "admin" });
-  eleventyConfig.addPassthroughCopy({
-    "/_includes/assets/css/main.css": "assets/css/main.css",
-  });
-  eleventyConfig.addPassthroughCopy({
-    "/_includes/assets/js/main.js": "assets/js/main.js",
+  const staticFiles = [
+    { "favicon.ico": "favicon.ico" },
+    { "static/img": "static/img" },
+    { "static/fonts": "static/fonts" },
+    { "static/video": "static/video" },
+    { "admin/": "admin" },
+    { "/_includes/assets/css/main.css": "assets/css/main.css" },
+    { "/_includes/assets/js/main.js": "assets/js/main.js" },
+  ];
+
+  staticFiles.forEach((file) => {
+    eleventyConfig.addPassthroughCopy(file);
   });
 
-  eleventyConfig.addFilter("log", value => {
-    console.log(value);
-    return JSON.stringify(value);
-  });
-
-  eleventyConfig.addCollection("speakers", function (collection) {
-    return collection.getFilteredByGlob("speakers/*.md");
-  });
-
-  eleventyConfig.addCollection("partners", function (collection) {
-    return collection.getFilteredByGlob("partners/*.md");
-  });
-
-  eleventyConfig.addCollection("locations", function (collection) {
-    return collection.getFilteredByGlob("locations/*.md");
-  });
-
-  eleventyConfig.addCollection("days", function (collection) {
-    return collection.getFilteredByGlob("days/*.md");
-  });
-
-  /* Markdown Plugins */
-  let options = {
+  // Markdown Library Configuration
+  const markdownLib = markdownIt({
     html: true,
     breaks: true,
     linkify: true,
-  };
-  let opts = {
-    permalink: false,
-  };
-
-  const markdownLib = markdownIt(options)
-    .use(markdownItAnchor, opts)
+  })
+    .use(markdownItAnchor, { permalink: false })
     .use(markdownItAttrs);
-  eleventyConfig.setLibrary("md", markdownLib);
 
-  // Add Markdown filter
-  eleventyConfig.addFilter("markdown", (content) => {
-    return markdownLib.render(content);
-  });
+  eleventyConfig.setLibrary("md", markdownLib);
 
   return {
     templateFormats: ["md", "njk", "liquid"],

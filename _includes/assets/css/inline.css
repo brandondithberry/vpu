@@ -87,12 +87,11 @@ h1 {
   font-size: 2rem;
 }
 
-h1:first-child,
-h2:first-child,
-h3:first-child {
-  margin-block-start: 0;
-  margin-block-end: 0;
-
+h1,
+h2,
+h3 {
+  margin-block-start: 0.6rem;
+  margin-block-end: 0.6rem;
 }
 
 h1,
@@ -112,7 +111,7 @@ h3:not(:first-child) {
 }
 
 .xxl-text {
-  font-size: 2.4rem;
+  font-size: 3rem;
 }
 
 .xl-text {
@@ -222,7 +221,7 @@ button:hover {
 /* #region HEADER & MENU */
 
 header {
-  position: sticky;
+  position: fixed;
   display: flex;
   top: 0;
   width: 100%;
@@ -290,7 +289,7 @@ header .logo img {
 header .menu,
 header .cta {
   display: none;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 header .menu-toggle span {
@@ -309,28 +308,29 @@ span.active {
   position: fixed;
   display: none;
   flex-direction: column;
-  padding: 3rem;
-  width: 90%;
-  top: 4.25rem;
-  left: 50%;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  top: 5rem;
+  right: 5%;
   z-index: 1000;
   background: white;
   box-shadow: 0 1px 5px #fff;
   color: black !important;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  gap: 2rem;
+  gap: 1.5rem;
   border-radius: 2rem;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  transform: translateX(-50%) translateY(-100%);
+  transform: translateY(-100%);
   animation: flicker 1s linear infinite;
 }
 
 .mobile-menu.active {
   display: flex;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -338,12 +338,19 @@ span.active {
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
-  gap: 2.5rem;
+  gap: 2rem;
   margin-bottom: 0;
 }
 
 .mobile-menu .cta {
+  width: 100%;
   font-size: 1.2rem;
+}
+
+.mobile-menu a,
+.mobile-menu button {
+  width: 100%;
+  letter-spacing: 0.05rem;
 }
 
 /* #endregion */
@@ -792,21 +799,23 @@ section .overlay {
 
 /* #region SCHEDULE */
 
+.schedule-hero {
+  padding: 6rem 2rem 0 2rem;
+}
+
+.schedule-hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-hero .container h1 {
+  margin-block-end: 0;
+  line-height: 1;
+}
+
 .schedule {
   display: none;
-}
-
-.schedule-hero .text {
-  display: flex;
-  flex-direction: column;
-  place-content: center;
-  place-items: center;
-}
-
-.schedule-hero img {
-  width: 100%;
-  max-width: 450px;
-  padding: 0 0.5rem;
 }
 
 .mobile-schedule {
@@ -834,6 +843,10 @@ section .overlay {
   border: 1px solid #fff;
 }
 
+.description .text {
+  text-align: left;
+}
+
 /* #endregion */
 
 /* #region TABLET STYLING */
@@ -855,11 +868,11 @@ section .overlay {
   .speakers .container {
     grid-template: auto / repeat(2, 1fr);
   }
-  
+
   footer .signup .container {
-    flex-direction: row
+    flex-direction: row;
   }
-  
+
   footer .legals {
     display: flex;
     flex-direction: row;
@@ -869,12 +882,12 @@ section .overlay {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   footer .copyright {
     flex-direction: row;
     gap: 2rem;
   }
-  
+
   footer .socials {
     width: auto;
     margin-top: 0;
@@ -891,7 +904,7 @@ section .overlay {
   }
 
   .xxl-text {
-    font-size: 600%;
+    font-size: 5rem;
   }
 
   .xl-text {
@@ -920,6 +933,10 @@ section .overlay {
   }
 
   header .menu-toggle {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 

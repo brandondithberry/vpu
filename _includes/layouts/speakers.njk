@@ -5,7 +5,7 @@ permalink: /speakers/index.html
 ---
 
 {% set speakers = collections.speakers %}
-<section
+<section class="hero"
   style="
     background: url(/static/img/background.jpg);
     background-size: cover;
@@ -26,7 +26,7 @@ permalink: /speakers/index.html
       {% if speaker.data.headshot %}
       <img src="{{ speaker.data.headshot }}" width="200" />
       {% endif %} {% if speaker.data.speaker %}
-      <a href="/speakers/{{ speaker.data.path }}/index.html" style="text-decoration: underline"
+      <a href="/speakers/{{ speaker.data.slug }}/index.html" style="text-decoration: underline"
         ><h2>{{ speaker.data.speaker }}</h2></a
       >
       {% endif %} {% if speaker.data.role %}
