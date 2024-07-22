@@ -91,6 +91,8 @@ h1:first-child,
 h2:first-child,
 h3:first-child {
   margin-block-start: 0;
+  margin-block-end: 0;
+
 }
 
 h1,
@@ -889,7 +891,7 @@ section .overlay {
   }
 
   .xxl-text {
-    font-size: 2.4rem;
+    font-size: 600%;
   }
 
   .xl-text {
