@@ -379,18 +379,23 @@ footer .signup .container {
   place-items: center;
   place-content: center;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 footer .signup .day {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 1rem;
   width: 100%;
   text-align: center;
   place-content: center;
   place-items: center;
+}
+
+footer .signup .day img {
+  height: 100px;
+  margin-bottom: 1.5rem;
 }
 
 footer .legals {
@@ -589,6 +594,10 @@ section .overlay {
   text-align: center;
 }
 
+.about .text {
+  max-width: 700px;
+}
+
 .about img#room {
   border: 2px solid white;
   border-radius: 10px;
@@ -654,6 +663,7 @@ section .overlay {
   position: relative;
   width: 100%;
   padding: 0.5rem 1.5rem;
+  text-align: left;
 }
 
 .locations .location .image {
@@ -664,7 +674,23 @@ section .overlay {
   background-position: center;
 }
 
+.locationslist {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 .locationslist .container {
+  display: flex;
+  max-width: 1360px;
+}
+
+.locationslist .map {
+  width: 60%;
+  max-width: 800px;
+}
+
+.locationslist .locations {
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -887,7 +913,7 @@ section .overlay {
   }
 
   .hero {
-    height: 48vw;
+    height: 40vw;
   }
 
   .hero .logo {
@@ -1056,7 +1082,7 @@ section .overlay {
   .locations .location .image {
     position: relative;
     width: 40%;
-    height: 12rem;
+    height: 8rem;
     background-size: cover;
     background-position: center;
   }

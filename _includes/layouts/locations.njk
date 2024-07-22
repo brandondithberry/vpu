@@ -4,36 +4,38 @@ section: locations
 permalink: /locations/index.html
 ---
 
+{% set locationslist = collections.locations %}
 <section class="page-hero">
   <div class="container">
     <h1 class="xxl-text">{{ title }}</h1>
   </div>
 </section>
-{% set locationslist = collections.locations %}
 <section class="locationslist">
   <div class="container">
-    {% for location in locationslist %}
-    <div class="location">
-      <div class="textbox">
-        <h3>
-          {% if location.data.place %}
-          {{ location.data.place }}
-          {% else %} Untitled {% endif %}
-        </h3>
-        {% if location.data.address %}
-        <p>
-          {{ location.data.address }}
-        </p>
-        {% endif %} {% if location.data.days %}
-        <h4>
-          {{ location.data.days }}
-        </h4>
-        {% endif %}
+    <div class="locations">
+      {% for location in locationslist %}
+      <div class="location">
+        <div class="textbox">
+          <h3>
+            {% if location.data.place %}
+            {{ location.data.place }}
+            {% else %} Untitled {% endif %}
+          </h3>
+          {% if location.data.address %}
+          <p>
+            {{ location.data.address }}
+          </p>
+          {% endif %} {% if location.data.days %}
+          <h4>
+            {{ location.data.days }}
+          </h4>
+          {% endif %}
+        </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
-  <div class="container">
-    <div class="map"></div>
+    <div class="map">
+      <img src="/static/img/map.jpg" alt="Industry City Map" />
+    </div>
   </div>
 </section>
