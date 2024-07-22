@@ -135,6 +135,7 @@ collections:
     folder: "partners"
     create: true
     slug: "{{slug}}"
+    path: "/partners/{{slug}}/index.html"
     identifier_field: partner
     fields:
       - { label: Partner, name: partner, widget: string }
@@ -146,6 +147,7 @@ collections:
     folder: "speakers"
     create: true
     slug: "{{slug}}"
+    path: "/speakers/{{slug}}/index.html"
     identifier_field: speaker
     fields:
       - { label: Speaker, name: speaker, widget: string }
@@ -177,6 +179,7 @@ collections:
     folder: "locations"
     create: true
     slug: "{{slug}}"
+    path: "/locations/{{slug}}/index.html"
     identifier_field: place
     fields:
       - { label: Place, name: place, widget: string }
