@@ -128,7 +128,7 @@ h3:not(:first-child) {
 
 .text {
   width: 100%;
-  max-width: 570px;
+  max-width: 500px;
   margin: 0 auto;
   text-align: center;
 }
