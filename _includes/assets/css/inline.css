@@ -237,6 +237,7 @@ header .container {
   box-shadow: #fff 0 1px 10px;
   color: black !important;
   width: 90%;
+  max-width: 1360px;
   margin: 0 auto;
   border-radius: 50rem;
   padding: 0.7rem 1.25rem;
@@ -289,7 +290,7 @@ header .logo img {
 header .menu,
 header .cta {
   display: none;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 header .menu-toggle span {
@@ -750,7 +751,7 @@ section .overlay {
   grid-template: auto / repeat(1, 1fr);
   gap: 1rem;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1360px;
   margin: 0 auto;
 }
 
@@ -982,7 +983,7 @@ section .overlay {
 
   .schedule table {
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1360px;
     border-collapse: collapse;
     table-layout: fixed;
     font-size: 0.8rem;
