@@ -3,21 +3,21 @@ layout: layouts/base.njk
 section: days
 ---
 
-<section class="schedule-hero">
+<section class="page-hero">
   <div class="container">
     <h1 class="xxl-text">{{ title }}</h1>
-    <a href="{{ invite }}" target="_blank"
-    class="lg-text"><button class="alt">Sign Up</button></a
-    >
   </div>
 </section>
 <section class="description">
   <div class="container">
-    <div class="image">
-      <img src="{{ image }}" alt="Day Image" width="200">
-    </div>
     <div class="text">
       <p>{{ description }}</p>
+    </div>
+    <div class="image">
+      <img src="{{ image }}" alt="Day Image" width="400" />
+      <a href="{{ invite }}" target="_blank" class="lg-text"
+        ><button class="alt">Sign Up</button></a
+      >
     </div>
   </div>
 </section>

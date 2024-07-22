@@ -442,7 +442,7 @@ section {
 section .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 990px;
+  max-width: 1100px;
 }
 
 section.alt {
@@ -800,11 +800,13 @@ section .overlay {
 
 /* #region SCHEDULE */
 
-.schedule-hero {
+.page-hero {
   padding: 6rem 2rem 0 2rem;
+  background: white;
+  color: black;
 }
 
-.schedule-hero .container {
+.page-hero .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -844,8 +846,34 @@ section .overlay {
   border: 1px solid #fff;
 }
 
+.description .container {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  justify-items: start;
+  gap: 3rem;
+}
+
 .description .text {
   text-align: left;
+}
+
+.description .image {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+}
+
+.description .image img {
+  width: 100%;
+}
+
+.description .image a {
+  margin-top: 2rem;
 }
 
 /* #endregion */
