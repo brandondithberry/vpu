@@ -8,15 +8,15 @@ backend:
 # Uncomment below to enable a link to your published site in the header bar of Decap CMS
 site_url: https://virtualproductionunplugged.com
 
-media_folder: "static/img" # Media files will be stored in the repo under images/uploads
+media_folder: 'static/img' # Media files will be stored in the repo under images/uploads
 
 collections:
-  - label: "Days"
-    name: "days"
+  - label: 'Days'
+    name: 'days'
     files:
-      - label: "July 31st"
-        name: "july31st"
-        file: "pages/july31st.md"
+      - label: 'July 31st'
+        name: 'july31st'
+        file: 'pages/july31st.md'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Invite Link, name: invite, widget: string }
@@ -28,11 +28,11 @@ collections:
             fields:
               - { label: Times, name: times, widget: string }
               - { label: Title, name: title, widget: string }
-              - label: "Type"
-                name: "type"
-                widget: "select"
+              - label: 'Type'
+                name: 'type'
+                widget: 'select'
                 options:
-                  ["Presentation", "Demo", "Panel Discussion", "Networking"]
+                  ['Presentation', 'Demo', 'Panel Discussion', 'Networking']
                 required: false
               - {
                   label: Location,
@@ -40,29 +40,29 @@ collections:
                   widget: string,
                   required: false,
                 }
-              - label: "Presenter"
-                name: "presenter"
-                widget: "relation"
-                collection: "speakers"
-                search_fields: ["speaker"]
-                value_field: "{{slug}}"
-                display_fields: ["speaker", "company"]
+              - label: 'Presenter'
+                name: 'presenter'
+                widget: 'relation'
+                collection: 'speakers'
+                search_fields: ['speaker']
+                value_field: '{{slug}}'
+                display_fields: ['speaker', 'company']
                 required: false
-              - label: "Moderator"
-                name: "moderator"
-                widget: "relation"
-                collection: "speakers"
-                search_fields: ["speaker"]
-                value_field: "{{slug}}"
-                display_fields: ["speaker", "company"]
+              - label: 'Moderator'
+                name: 'moderator'
+                widget: 'relation'
+                collection: 'speakers'
+                search_fields: ['speaker']
+                value_field: '{{slug}}'
+                display_fields: ['speaker', 'company']
                 required: false
-              - label: "Panelists"
-                name: "panelists"
-                widget: "relation"
-                collection: "speakers"
-                search_fields: ["speaker"]
-                value_field: "{{slug}}"
-                display_fields: ["speaker", "company"]
+              - label: 'Panelists'
+                name: 'panelists'
+                widget: 'relation'
+                collection: 'speakers'
+                search_fields: ['speaker']
+                value_field: '{{slug}}'
+                display_fields: ['speaker', 'company']
                 multiple: true
                 required: false
               - { label: Info, name: info, widget: markdown, required: false }
@@ -72,9 +72,9 @@ collections:
               widget: hidden,
               default: /layouts/day.njk,
             }
-      - label: "August 1st"
-        name: "august1st"
-        file: "pages/august1st.md"
+      - label: 'August 1st'
+        name: 'august1st'
+        file: 'pages/august1st.md'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Invite Link, name: invite, widget: string }
@@ -86,11 +86,11 @@ collections:
             fields:
               - { label: Times, name: times, widget: string }
               - { label: Title, name: title, widget: string }
-              - label: "Type"
-                name: "type"
-                widget: "select"
+              - label: 'Type'
+                name: 'type'
+                widget: 'select'
                 options:
-                  ["Presentation", "Demo", "Panel Discussion", "Networking"]
+                  ['Presentation', 'Demo', 'Panel Discussion', 'Networking']
                 required: false
               - {
                   label: Location,
@@ -98,29 +98,29 @@ collections:
                   widget: string,
                   required: false,
                 }
-              - label: "Presenter"
-                name: "presenter"
-                widget: "relation"
-                collection: "speakers"
-                search_fields: ["speaker"]
-                value_field: "{{slug}}"
-                display_fields: ["speaker", "company"]
+              - label: 'Presenter'
+                name: 'presenter'
+                widget: 'relation'
+                collection: 'speakers'
+                search_fields: ['speaker']
+                value_field: '{{slug}}'
+                display_fields: ['speaker', 'company']
                 required: false
-              - label: "Moderator"
-                name: "moderator"
-                widget: "relation"
-                collection: "speakers"
-                search_fields: ["speaker"]
-                value_field: "{{slug}}"
-                display_fields: ["speaker", "company"]
+              - label: 'Moderator'
+                name: 'moderator'
+                widget: 'relation'
+                collection: 'speakers'
+                search_fields: ['speaker']
+                value_field: '{{slug}}'
+                display_fields: ['speaker', 'company']
                 required: false
-              - label: "Panelists"
-                name: "panelists"
-                widget: "relation"
-                collection: "speakers"
-                search_fields: ["speaker"]
-                value_field: "{{slug}}"
-                display_fields: ["speaker", "company"]
+              - label: 'Panelists'
+                name: 'panelists'
+                widget: 'relation'
+                collection: 'speakers'
+                search_fields: ['speaker']
+                value_field: '{{slug}}'
+                display_fields: ['speaker', 'company']
                 multiple: true
                 required: false
               - { label: Info, name: info, widget: markdown, required: false }
@@ -130,24 +130,24 @@ collections:
               widget: hidden,
               default: /layouts/day.njk,
             }
-  - name: "partners"
-    label: "Partners"
-    folder: "partners"
+  - name: 'partners'
+    label: 'Partners'
+    folder: 'partners'
     create: true
-    slug: "{{slug}}"
-    path: "/partners/{{slug}}/index.html"
+    slug: '{{slug}}'
+    path: '{{slug}}/index'
     identifier_field: partner
     fields:
       - { label: Partner, name: partner, widget: string }
       - { label: Website, name: website, widget: string }
       - { label: Blurb, name: blurb, widget: markdown }
       - { label: Logo, name: logo, widget: image }
-  - name: "speakers"
-    label: "Speakers"
-    folder: "speakers"
+  - name: 'speakers'
+    label: 'Speakers'
+    folder: 'speakers'
     create: true
-    slug: "{{slug}}"
-    path: "/speakers/{{slug}}/index.html"
+    slug: '{{slug}}'
+    path: '{{slug}}/index'
     identifier_field: speaker
     fields:
       - { label: Speaker, name: speaker, widget: string }
@@ -161,12 +161,12 @@ collections:
           required: false,
         }
       - { label: Dates, name: dates, widget: string, required: false }
-      - label: "Type"
-        name: "type"
-        widget: "select"
+      - label: 'Type'
+        name: 'type'
+        widget: 'select'
         multiple: true
         required: false
-        options: ["Moderator", "Panelist"]
+        options: ['Moderator', 'Panelist']
       - { label: Bio, name: bio, widget: markdown, required: false }
       - { label: Headshot, name: headshot, widget: image, required: false }
       - { label: Layout,
@@ -174,12 +174,12 @@ collections:
           widget: hidden,
           default: layouts/speaker.njk,
         }
-  - name: "locations"
-    label: "Locations"
-    folder: "locations"
+  - name: 'locations'
+    label: 'Locations'
+    folder: 'locations'
     create: true
-    slug: "{{slug}}"
-    path: "/locations/{{slug}}/index.html"
+    slug: '{{slug}}'
+    path: '{{slug}}/index'
     identifier_field: place
     fields:
       - { label: Place, name: place, widget: string }
