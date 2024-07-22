@@ -682,11 +682,14 @@ section .overlay {
 
 .locationslist .container {
   display: flex;
+  flex-direction: column;
   max-width: 1360px;
+  place-content: center;
+  place-items: center;
 }
 
 .locationslist .map {
-  width: 60%;
+  width: 100%;
   max-width: 800px;
 }
 
@@ -1078,6 +1081,18 @@ section .overlay {
     width: 60%;
     padding: 1rem 2rem;
   }
+
+  
+.locationslist .container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1360px;
+}
+
+.locationslist .map {
+  width: 60%;
+  max-width: 800px;
+}
 
   .locations .location .image {
     position: relative;
