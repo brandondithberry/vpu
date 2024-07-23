@@ -871,6 +871,46 @@ section .overlay {
   place-items: center;
 }
 
+.secondary-partners {
+  padding-top: 0;
+}
+
+.secondary-partners .container {
+  max-width: 1360px;
+}
+
+.secondary-partners .grid {
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+  gap: 2rem;
+  place-content: center;
+  place-items: center;
+  border: 2px solid white;
+  padding: 2rem;
+}
+
+.secondary-partners h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.secondary-partners .partner {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  place-content: center;
+  place-items: center;
+}
+
+.secondary-partners .partner img {
+  display: block;
+  width: auto;
+  height: 100px;
+  object-fit: contain;
+  text-align: center;
+}
+
 /* #endregion 
 
 /* #region SCHEDULE */
@@ -1069,6 +1109,10 @@ section .overlay {
 
   .locations .text {
     width: 100%;
+  }
+
+  .secondary-partners .grid {
+    grid-template: auto / repeat(5, 1fr);
   }
 
   .signup .container {

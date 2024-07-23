@@ -13,9 +13,12 @@ permalink: /partners/index.html
 {% set partnerlist = collections.partners %}
 <section class="partnerlist">
   <div class="grid">
-    {% for partner in partnerlist %}
+    {% for partner in partnerlist %} {% if partner.data.type === "Lead Partner"
+    %}
     <div class="partner">
-      <a href="{{ partner.data.website }}" target="_blank"><img src="{{ partner.data.logo }}" alt="partner logo" width="180px" /></a>
+      <a href="{{ partner.data.website }}" target="_blank"
+        ><img src="{{ partner.data.logo }}" alt="partner logo" width="180px"
+      /></a>
       <h3>
         {% if partner.data.title %}
         {{ partner.data.title }}
@@ -25,10 +28,29 @@ permalink: /partners/index.html
       <p>
         {{ partner.data.blurb }}
       </p>
-      <a href="{{ partner.data.website }}" target="_blank"
-        style="margin-top: 1rem;"><button class="alt">Visit Partner Site</button></a
+      <a
+        href="{{ partner.data.website }}"
+        target="_blank"
+        style="margin-top: 1rem"
+        ><button class="alt">Visit Partner Site</button></a
       >
+      {% endif %}
     </div>
     {% endif %} {% endfor %}
+  </div>
+</section>
+<section class="secondary-partners">
+  <div class="container">
+    <h2 class="xl-text">Secondary Partners</h2>
+    <div class="grid">
+      {% for partner in partnerlist %} {% if partner.data.type === "Secondary Partner" %}
+      <div class="partner">
+        <a href="{{ partner.data.website }}" target="_blank"
+          ><img src="{{ partner.data.logo }}" alt="partner logo" width="180px"
+        /></a>
+        <h5>{{ partner.data.partner }}</h5>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
   </div>
 </section>
