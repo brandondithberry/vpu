@@ -121,7 +121,7 @@ collections:
                 widget: "relation"
                 collection: "speakers"
                 search_fields: ["speaker"]
-                value_field: "{{slug}}"
+                value_field: "speaker"
                 display_fields: ["speaker", ", ", "company"]
                 multiple: true
                 required: false
