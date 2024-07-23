@@ -51,7 +51,7 @@ events:
     times: 12:30 PM - 1:30 PM
   - title: "Behind the Pixels: Techniques and Challenges in Lighting for Virtual
       Production"
-    location: Abel Theater
+    location: Abel Cine Theater
     info: ""
     times: 1:30 PM - 2:45 PM
     type: Panel Discussion
@@ -63,7 +63,7 @@ events:
   - title: Break
     times: 2:45 PM - 3:00 PM
   - title: "Mastering the Virtual: Educating Film Crews on Virtual Production"
-    location: Abel Theater
+    location: Abel Cine Theater
     info: ""
     times: 3:00 PM - 4:00 PM
     type: Panel Discussion
@@ -81,5 +81,6 @@ events:
     type: Networking
     info: Sponsored by [Lux Lighting](https://luxlightingllc.com) & [Kino
       Flo](https://kinoflo.com)
+    location: The Garage Catered Lunch - Abel Cine
 layout: layouts/day.njk
 ---
