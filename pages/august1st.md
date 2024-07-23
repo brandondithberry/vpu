@@ -93,7 +93,7 @@ events:
     times: 4:30 PM - 5:00 PM
     info: "[](https://industrycity.com)"
   - title: "HAPPY HOUR + DEMO: Interactive Advanced Virtual Production"
-    location: The Garage
+    location: The Garage Catered Lunch - Abel Cine
     times: 5:00 PM - 8:00 PM
     type: Networking
     info: Sponsored by [Industry City](https://industrycity.com)
