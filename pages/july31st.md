@@ -18,7 +18,7 @@ events:
   - title: Arrival
     location: The Garage
     info: >-
-      Continental breakfast (Sponsored by [The Garage](https://the-garage.tv)
+      Continental breakfast (Sponsored by [The Garage)](https://the-garage.tv)
 
 
       [](https://the-garage.tv)Coffee Bar (Sponsored by [Lux Machina](https://www.luxmc.com/))
