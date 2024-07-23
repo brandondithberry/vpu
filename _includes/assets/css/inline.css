@@ -192,7 +192,7 @@ button {
   background: var(--background);
   color: var(--primary);
   cursor: pointer;
-  padding: 0.8rem 1.2rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 100rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -221,31 +221,29 @@ button:hover {
 /* #region HEADER & MENU */
 
 header {
-  position: fixed;
+  position: sticky;
   display: flex;
   top: 0;
   width: 100%;
   z-index: 100;
   justify-content: center;
   align-items: center;
-  padding: 0.7rem 0;
+  background: white;
+  box-shadow: #fff 0 1px 10px;
+  animation: flicker 2s linear infinite;
 }
 
 header .container {
   display: flex;
-  background: white;
-  box-shadow: #fff 0 1px 10px;
   color: black !important;
   width: 90%;
   max-width: 1360px;
   margin: 0 auto;
-  border-radius: 50rem;
-  padding: 0.7rem 1.25rem;
+  padding: 0.5rem 1.25rem;
   justify-content: space-between;
   align-content: center;
   align-items: center;
   text-transform: uppercase;
-  animation: flicker 2s linear infinite;
 }
 
 @keyframes flicker {
@@ -591,16 +589,29 @@ section .overlay {
 /* #region HOMEPAGE */
 
 .about {
+  background: url(/static/img/background.jpg);
+  background-size: cover;
   text-align: center;
+  background-position: center;
 }
 
 .about .text {
-  max-width: 700px;
+  max-width: 900px;
+  padding: 6rem 2rem;
+  text-align: left;
 }
 
-.about img#room {
-  border: 2px solid white;
-  border-radius: 10px;
+.topics {
+  padding: 0;
+  text-align: justify;
+}
+
+.topics p {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.06rem;
 }
 
 .days .container {
@@ -830,7 +841,7 @@ section .overlay {
 /* #region SCHEDULE */
 
 .page-hero {
-  padding: 6rem 2rem 0 2rem;
+  padding: 2rem 2rem 0 2rem;
   background: white;
   color: black;
 }
@@ -912,7 +923,7 @@ section .overlay {
 @media screen and (min-width: 768px) {
   header .container {
     flex-direction: row;
-    padding: 0.8rem 1.5rem;
+    padding: 0.6rem 1.5rem;
   }
 
   .hero {
@@ -979,7 +990,7 @@ section .overlay {
 
   header .container {
     flex-direction: row;
-    padding: 0.4rem 1.5rem;
+    padding: 0.6rem 1.5rem;
   }
 
   header .menu {
@@ -1082,22 +1093,21 @@ section .overlay {
     padding: 1rem 2rem;
   }
 
-  
-.locationslist .container {
-  display: flex;
-  flex-direction: row;
-  max-width: 1360px;
-}
+  .locationslist .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1360px;
+  }
 
-.locationslist .map {
-  width: 60%;
-  max-width: 800px;
-}
+  .locationslist .map {
+    width: 60%;
+    max-width: 800px;
+  }
 
   .locations .location .image {
     position: relative;
     width: 40%;
-    height: 8rem;
+    height: 10rem;
     background-size: cover;
     background-position: center;
   }

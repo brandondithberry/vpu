@@ -15,7 +15,7 @@ permalink: /partners/index.html
   <div class="grid">
     {% for partner in partnerlist %}
     <div class="partner">
-      <img src="{{ partner.data.logo }}" alt="partner logo" width="180px" />
+      <a href="{{ partner.data.website }}" target="_blank"><img src="{{ partner.data.logo }}" alt="partner logo" width="180px" /></a>
       <h3>
         {% if partner.data.title %}
         {{ partner.data.title }}
