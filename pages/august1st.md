@@ -1,5 +1,6 @@
 ---
 title: August 1st
+subtitle: Open to Advertising & Marketing Industry Professionals
 invite: https://partiful.com/e/XOlIrrHeYdzlpffgeyrv
 image: /static/img/title-august1st.jpg
 description: Join us for an immersive one-day event crafted for advertising
@@ -15,8 +16,10 @@ description: Join us for an immersive one-day event crafted for advertising
 events:
   - title: Arrival
     location: The Garage
-    info: Catered Breakfast (Sponsored by [The Garage](https://www.the-garage.tv))
-      and Coffee Bar (Sponsored by [Lux Machina)](https://www.luxmc.com)
+    info: |-
+      Catered Breakfast (Sponsored by [The Garage](https://www.the-garage.tv))
+
+      Coffee Bar (Sponsored by [Lux Machina)](https://www.luxmc.com)
     times: 8:30 AM - 9:30 AM
   - title: Opening Remarks
     info: |-
