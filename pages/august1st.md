@@ -92,8 +92,7 @@ events:
   - title: Return to The Garage
     times: 4:30 PM - 5:00 PM
     info: "[](https://industrycity.com)"
-  - title: "HAPPY HOUR + DEMO: Interactive Advanced Virtual Production Demo and
-      Networking Happy Hour"
+  - title: "HAPPY HOUR + DEMO: Interactive Advanced Virtual Production"
     location: The Garage
     times: 5:00 PM - 8:00 PM
     type: Networking
