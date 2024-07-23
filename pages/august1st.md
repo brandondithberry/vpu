@@ -28,7 +28,8 @@ events:
     location: The Garage
     times: 9:30 AM - 9:45 AM
     type: Presentation
-    presenter: []
+    presenter:
+      - Eric Trabb
   - times: 9:45 AM - 10:00 AM
     title: The importance of innovation at the intersection of Art, Advertising, and
       Technology
