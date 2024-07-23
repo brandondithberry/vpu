@@ -71,7 +71,7 @@ collections:
               label: Layout,
               name: layout,
               widget: hidden,
-              default: /layouts/day.njk,
+              default: layouts/day.njk,
             }
       - label: "August 1st"
         name: "august1st"
@@ -130,7 +130,7 @@ collections:
               label: Layout,
               name: layout,
               widget: hidden,
-              default: /layouts/day.njk,
+              default: layouts/day.njk,
             }
   - name: "partners"
     label: "Partners"
