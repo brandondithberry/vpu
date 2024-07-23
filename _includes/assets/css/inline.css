@@ -314,9 +314,10 @@ span.active {
   flex-direction: column;
   padding: 2rem;
   width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   max-width: 400px;
   top: 5rem;
-  right: 5%;
   z-index: 1000;
   background: white;
   box-shadow: 0 1px 5px #fff;
@@ -328,13 +329,11 @@ span.active {
   border-radius: 2rem;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  transform: translateY(-100%);
   animation: flicker 1s linear infinite;
 }
 
 .mobile-menu.active {
   display: flex;
-  transform: translateY(0);
   opacity: 1;
 }
 
@@ -443,7 +442,7 @@ section .overlay {
 
 .hero {
   border-bottom: 1px solid white;
-  height: 14rem;
+  height: 16rem;
   overflow: hidden;
 }
 
@@ -1086,7 +1085,7 @@ section .overlay {
   }
 
   .hero {
-    height: 40vw;
+    height: 45vw;
   }
 
   .hero .logo {
