@@ -141,6 +141,12 @@ collections:
     fields:
       - { label: Partner, name: partner, widget: string }
       - { label: Website, name: website, widget: string }
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options:
+          ["Lead Partner", "Secondary Partner"]
+        required: false
       - { label: Blurb, name: blurb, widget: markdown }
       - { label: Logo, name: logo, widget: image }
   - name: "speakers"
