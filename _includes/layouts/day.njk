@@ -1,23 +1,18 @@
----
-layout: layouts/base.njk
-section: days
----
-
 <section class="page-hero">
   <div class="container">
-    <h1 class="xxl-text">{{ title }}</h1>
+    <h1 class="xxl-text">{{ title | safe }}</h1>
   </div>
 </section>
 <section class="description">
   <div class="container">
     <div class="text">
-      <p>{{ description }}</p>
+      <p>{{ description | safe }}</p>
     </div>
     <div class="image">
-      <img src="{{ image }}" alt="Day Image" width="400" />
-      <a href="{{ invite }}" target="_blank" class="lg-text"
-        ><button class="alt">Sign Up</button></a
-      >
+      <img src="{{ image | safe }}" alt="Day Image" width="400" />
+      <a href="{{ invite | safe }}" target="_blank" class="lg-text">
+        <button class="alt">Sign Up</button>
+      </a>
     </div>
   </div>
 </section>
@@ -31,30 +26,22 @@ section: days
       <tr style="background: {{ eventColors[event.type] }}; color: white">
         <td style="background: white; color: black">
           {% if event.times %}
-          <strong>{{ event.times }}</strong>
+          <strong>{{ event.times | safe }}</strong>
           {% endif %}
         </td>
-        {% if event.type %}
         <td>
-          <b>{{ event.type | upper }}</b>
+          {% if event.type %}
+          <b>{{ event.type | upper | safe }}</b>
+          {% endif %}
         </td>
-        {% endif %}
-        <td>{{ event.title }}</td>
-        {% if event.location %}
+        <td>{{ event.title | safe }}</td>
         <td>
-          <span><b>Location: </b></span>{{ event.location }}
+          {% if event.location %}
+          <span><b>Location: </b></span>{{ event.location | safe }} {% endif %}
         </td>
-        {% endif %} {% if event.presenter %}
-        <td>{{ event.presenter }}</td>
-        {% endif %} {% if event.moderator %}
-        <td>{{ event.moderator }}</td>
-        {% endif %} {% if event.panelists %}
-        <td>{{ event.panelists }}</td>
-        {% endif %} {% if event.info %}
-        <td>
-          {{ event.info | markdown | safe }}
-        </td>
-        {% endif %}
+        <td>{{ event.moderator | safe }}</td>
+        <td>{{ event.panelists | safe }}</td>
+        <td>{{ event.info | markdown | safe }}</td>
       </tr>
       {% endfor %}
     </table>
@@ -78,39 +65,26 @@ section: days
     %}
     <tr style="background: {{ eventColors[event.type] }}; color: white">
       <td class="times">
-        <strong>{{ event.times }}</strong>
+        <strong>{{ event.times | safe }}</strong>
       </td>
       <td class="type">
         {% if event.type %}
-        <b>{{ event.type | upper }}</b>
+        <b>{{ event.type | upper | safe }}</b>
         {% endif %}
       </td>
-      <td>{{ event.title }}</td>
-      {% if event.location %}
+      <td>{{ event.title | safe }}</td>
+      <td>{{ event.location | safe }}</td>
+      {% if event.presenter %}
       <td>
-        {{ event.location }}
+        {% for speaker in speakers %} 
+        {% set speakerData = collections.speakers | findBySlug(event.presenter) %}
+        <a href="/speakers/{{ event.presenter }}/index.html">{{ speakerData.name }}</a>
+        {% endfor %}
       </td>
-      {% else %}
-      <td></td>
-      {% endif %} {% if event.presenter %}
-      <td>{{ event.presenter }}</td>
-      {% else %}
-      <td></td>
-      {% endif %} {% if event.moderator %}
-      <td>{{ event.moderator }}</td>
-      {% else %}
-      <td></td>
-      {% endif %} {% if event.panelists %}
-      <td>{{ event.panelists }}</td>
-      {% else %}
-      <td></td>
-      {% endif %} {% if event.info %}
-      <td>
-        {{ event.info | markdown | safe }}
-      </td>
-      {% else %}
-      <td></td>
       {% endif %}
+      <td>{{ event.moderator | safe }}</td>
+      <td>{{ event.panelists | safe }}</td>
+      <td>{{ event.info | markdown | safe }}</td>
     </tr>
     {% endfor %}
   </table>

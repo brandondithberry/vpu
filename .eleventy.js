@@ -24,10 +24,17 @@ module.exports = function (eleventyConfig) {
     });
   };
 
+  // Custom filters
+  // Add a filter to find a speaker by name
+  eleventyConfig.addFilter("findBySlug", (slug, collection) => {
+    return collection.find((item) => item.data.slug === slug);
+  });
+
   eleventyConfig.addFilter("find", function (array, key, value) {
     return array.find((item) => item[key] === value);
   });
 
+  // Define collections
   createCollectionWithSlug("speakers", "speakers/*.md");
   createCollectionWithSlug("partners", "partners/*.md");
   createCollectionWithSlug("locations", "locations/*.md");
