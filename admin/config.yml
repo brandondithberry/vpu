@@ -46,7 +46,7 @@ collections:
                 widget: "relation"
                 collection: "speakers"
                 search_fields: ["speaker"]
-                value_field: "{{slug}}"
+                value_field: "speaker"
                 display_fields: ["{{speaker}} - {{company}}"]
                 required: false
               - label: "Moderator"
@@ -54,7 +54,7 @@ collections:
                 widget: "relation"
                 collection: "speakers"
                 search_fields: ["speaker"]
-                value_field: "{{slug}}"
+                value_field: "speaker"
                 display_fields: ["{{speaker}} - {{company}}"]
                 required: false
               - label: "Panelists"
@@ -62,7 +62,7 @@ collections:
                 widget: "relation"
                 collection: "speakers"
                 search_fields: ["speaker"]
-                value_field: "{{slug}}"
+                value_field: "speaker"
                 display_fields: ["{{speaker}} - {{company}}"]
                 multiple: true
                 required: false
@@ -105,7 +105,7 @@ collections:
                 widget: "relation"
                 collection: "speakers"
                 search_fields: ["speaker"]
-                value_field: "{{slug}}"
+                value_field: "speaker"
                 display_fields: ["{{speaker}} - {{company}}"]
                 required: false
               - label: "Moderator"
@@ -113,7 +113,7 @@ collections:
                 widget: "relation"
                 collection: "speakers"
                 search_fields: ["speaker"]
-                value_field: "{{slug}}"
+                value_field: "speaker"
                 display_fields: ["{{speaker}} - {{company}}"]
                 required: false
               - label: "Panelists"
