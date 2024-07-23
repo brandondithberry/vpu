@@ -64,7 +64,7 @@ events:
     times: 2:45 PM - 3:00 PM
   - title: "Learning Virtual Production: Next-Gen Education"
     location: Abel Cine Theater
-    info: ""
+    info: "**Panelists:** TBD"
     times: 3:00 PM - 4:00 PM
     type: Panel Discussion
   - title: Break / Move Back To The Garage
