@@ -1,8 +1,14 @@
+---
+layout: layouts/base.njk
+section: day
+---
+
 <section class="page-hero">
   <div class="container">
     <h1 class="xxl-text">{{ title | safe }}</h1>
   </div>
 </section>
+
 <section class="description">
   <div class="container">
     <div class="text">
@@ -16,37 +22,39 @@
     </div>
   </div>
 </section>
+
+{% set eventColors = { "Presentation": "#2e0e0e", "Demo": "#0e2e26", "Panel
+Discussion": "#210e2e", "Networking": "#0e1c2e" } %}
+
 <section class="mobile-schedule">
   <div class="container">
     <h2 class="xxl-text">Schedule</h2>
     <table>
-      {% set eventColors = { "Presentation": "#2e0e0e", "Demo": "#0e2e26",
-      "Panel Discussion": "#210e2e", "Networking": "#0e1c2e" } %} {% for event
-      in events %}
+      {% for event in events %}
       <tr style="background: {{ eventColors[event.type] }}; color: white">
+        {% if event.times %}
         <td style="background: white; color: black">
-          {% if event.times %}
           <strong>{{ event.times | safe }}</strong>
-          {% endif %}
         </td>
+        {% endif %} {% if event.type %}
         <td>
-          {% if event.type %}
-          <b>{{ event.type | upper | safe }}</b>
-          {% endif %}
+          <b>{{ event.type | safe }}</b>
         </td>
+        {% endif %} {% if event.title %}
         <td>{{ event.title | safe }}</td>
+        {% endif %} {% if event.location %}
         <td>
-          {% if event.location %}
-          <span><b>Location: </b></span>{{ event.location | safe }} {% endif %}
+          <span><b>Location: </b></span>{{ event.location | safe }}
         </td>
-        <td>{{ event.moderator | safe }}</td>
-        <td>{{ event.panelists | safe }}</td>
+        {% endif %} {% if event.info %}
         <td>{{ event.info | markdown | safe }}</td>
+        {% endif %}
       </tr>
       {% endfor %}
     </table>
   </div>
 </section>
+
 <section class="schedule">
   <h2 class="xl-text">Schedule</h2>
   <table>
@@ -60,23 +68,16 @@
       <th>Panelists</th>
       <th>Info</th>
     </tr>
-    {% set eventColors = { "Presentation": "#2e0e0e", "Demo": "#0e2e26", "Panel
-    Discussion": "#210e2e", "Networking": "#0e1c2e" } %} {% for event in events
-    %}
+    {% for event in events %}
     <tr style="background: {{ eventColors[event.type] }}; color: white">
-      <td class="times">
-        <strong>{{ event.times | safe }}</strong>
-      </td>
-      <td class="type">
-        {% if event.type %}
-        <b>{{ event.type | upper | safe }}</b>
-        {% endif %}
-      </td>
-      <td>{{ event.title | safe }}</td>
-      <td>{{ event.location | safe }}</td>
-      <td>{{ event.moderator | safe }}</td>
-      <td>{{ event.panelists | safe }}</td>
-      <td>{{ event.info | markdown | safe }}</td>
+      <td>{% if event.times %} {{ event.times }} {% endif %}</td>
+      <td>{% if event.type %}{{ event.type }}{% endif %}</td>
+      <td>{% if event.title %}{{ event.title }}{% endif %}</td>
+      <td>{% if event.location %}{{ event.location }}{% endif %}</td>
+      <td>{% if event.presenter %}{{ event.presenter }}{% endif %}</td>
+      <td>{% if event.moderator %}{{ event.moderator }}{% endif %}</td>
+      <td>{% if event.panelists %}{{ event.panelists }}{% endif %}</td>
+      <td>{% if event.info %}{{ event.info | markdown }}{% endif %}</td>
     </tr>
     {% endfor %}
   </table>
