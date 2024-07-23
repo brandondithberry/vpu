@@ -159,15 +159,6 @@ collections:
       - { label: Company, name: company, widget: string }
       - { label: Role, name: role, widget: string }
       - { label: LinkedIn URL, name: linkedin, widget: string, required: false }
-      - label: "Events"
-        name: "events"
-        widget: "relation"
-        collection: "speakers"
-        search_fields: ["speaker"]
-        value_field: "{{slug}}"
-        display_fields: ["speaker", "company"]
-        multiple: true
-        required: false
       - {
           label: Main Viewpoint,
           name: mainviewpoint,
@@ -182,6 +173,7 @@ collections:
         required: false
         options: ["Moderator", "Panelist"]
       - { label: Bio, name: bio, widget: markdown, required: false }
+      - { label: Events, name: events, widget: markdown, required: false }
       - { label: Headshot, name: headshot, widget: image, required: false }
       - {
           label: Layout,
