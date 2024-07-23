@@ -1,6 +1,8 @@
 ---
 title: August 1st
-subtitle: Open to Advertising & Marketing Industry Professionals
+subtitle: "Aug 1st event is tailored to Brand, Marketing, and Advertising
+  Professionals: Producers, Creative Directors, Marketing Managers,
+  Communications Officers, and more!"
 invite: https://partiful.com/e/XOlIrrHeYdzlpffgeyrv
 image: /static/img/title-august1st.jpg
 description: Join us for an immersive one-day event crafted for advertising
@@ -26,7 +28,7 @@ events:
     location: The Garage
     times: 9:30 AM - 9:45 AM
     type: Presentation
-    presenter: Eric Trabb
+    presenter: []
   - times: 9:45 AM - 10:00 AM
     title: The importance of innovation at the intersection of Art, Advertising, and
       Technology
@@ -88,7 +90,7 @@ events:
       Production more Accessible, Demo on the Rosco RDX System"
     times: 3:30 PM - 4:30 PM
     type: Demo
-    presenter: Sang-Jin Bae
+    presenter: []
   - title: Return to The Garage
     times: 4:30 PM - 5:00 PM
     info: "[](https://industrycity.com)"
