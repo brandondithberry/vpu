@@ -682,19 +682,20 @@ section .overlay {
 
 .locations .location {
   display: flex;
+  width: 100%;
   flex-direction: column;
   text-align: left;
   align-items: center;
-  gap: 1rem;
+  gap: 0;
+  padding: 1rem;
 }
 
-.locations .location .text {
+.locations .location .text-box {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  align-content: start;
   align-items: start;
   width: 100%;
   padding: 2rem;
@@ -965,6 +966,10 @@ section .overlay {
     grid-template: auto / repeat(2, 1fr);
   }
 
+  .locations .text {
+    width: 100%;
+  }
+
   footer .signup .container {
     flex-direction: row;
   }
@@ -1112,9 +1117,10 @@ section .overlay {
     align-items: center;
     background: var(--primary);
     color: var(--background);
+    gap: 1rem;
   }
 
-  .locations .location .text {
+  .locations .location .text-box {
     width: 60%;
     padding: 2rem;
   }
