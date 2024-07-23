@@ -12,7 +12,7 @@ bio: Emma Gottlieb is a film and TV lighting and control specialist and an
   City cinema lighting community performing multiple different roles both on and
   off set. For the last two years, she’s acted as the in-house technical sales
   specialist at Quasar Science and Litepanel, where she has been a critical
-  voice in the research/development, and industry adoption of image-based
+  voice in the research/development and industry adoption of image-based
   lighting for virtual production.
 headshot: /static/img/emma.jpg
 layout: layouts/speaker.njk
