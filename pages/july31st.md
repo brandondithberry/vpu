@@ -15,8 +15,8 @@ description: Join us for an immersive one-day event designed for creative
 events:
   - title: Arrival
     location: The Garage
-    info: Continental breakfast (Sponsored by The Garage) and Coffee Bar (Sponsored
-      by Lux Machina)
+    info: Continental breakfast (Sponsored by [The Garage](https://the-garage.tv))
+      and Coffee Bar (Sponsored by [Lux Machina](https://www.luxmc.com/))
     times: 8:30 AM - 9:30 AM
   - title: Opening Remarks
     location: The Garage
@@ -79,8 +79,10 @@ events:
       Topics Covered: TBD
     times: 4:15 PM - 5:00 PM
     type: Demo
-  - title: Happy Hour (Sponsored by Lux Lighting & Kino Flo)
+  - title: Happy Hour
     times: 5:00 PM - 7 PM
     type: Networking
+    info: Sponsored by [Lux Lighting](https://luxlightingllc.com) & [Kino
+      Flo](https://kinoflo.com)
 layout: /layouts/day.njk
 ---

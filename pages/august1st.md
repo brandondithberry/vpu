@@ -15,8 +15,8 @@ description: Join us for an immersive one-day event crafted for advertising
 events:
   - title: Arrival
     location: The Garage
-    info: Catered Breakfast (Sponsored by The Garage) and Coffee Bar (Sponsored by
-      Lux Machina)
+    info: Catered Breakfast (Sponsored by [The Garage](https://www.the-garage.tv))
+      and Coffee Bar (Sponsored by [Lux Machina)](https://www.luxmc.com)
     times: 8:30 AM - 9:30 AM
   - title: Opening Remarks
     info: |-
@@ -29,7 +29,7 @@ events:
   - title: The Basics of Virtual Production
     location: The Garage
     info: |-
-      Presenter - Emilia Page from Lux Machina
+      Presenter - Emilia Page from [Lux Machina](https://www.luxmc.com)
 
       Topics Covered: TBD
     times: 10:00 AM - 10:30 AM
@@ -37,7 +37,7 @@ events:
   - title: 3D Virtual Production
     location: The Garage
     info: |-
-      Presenter - Steve Giralt from The Garage
+      Presenter - Steve Giralt from [The Garage](https://the-garage.tv)
 
       Topics Covered: TBD
     times: 10:30 AM - 11:30 AM
@@ -54,8 +54,9 @@ events:
       Topics Covered: TBD
     times: 12:00 PM - 1:00 PM
     type: Panel Discussion
-  - title: Catered Lunch (Sponsored by Abel Cine)
+  - title: Catered Lunch
     times: 1:00 PM - 2:00 PM
+    info: Sponsored by [Abel Cine](https://www.abelcine.com)
   - title: Could I shoot ‘This’ with Virtual Production?
     location: Abel Theater
     info: |-
@@ -79,9 +80,10 @@ events:
   - title: Return to The Garage
     times: 4:30 PM - 5:00 PM
   - title: "HAPPY HOUR + DEMO: Interactive Advanced Virtual Production Demo and
-      Networking Happy Hour (sponsored by Industry City)"
+      Networking Happy Hour"
     location: The Garage
     times: 5:00 PM - 8:00 PM
     type: Demo
+    info: Sponsored by [Industry City](https://industrycity.com)
 layout: /layouts/day.njk
 ---
