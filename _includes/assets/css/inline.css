@@ -282,7 +282,7 @@ header .logo {
   display: flex;
   justify-content: center;
   width: 38vw;
-  max-width: 140px;
+  max-width: 160px;
 }
 
 header .logo img {
