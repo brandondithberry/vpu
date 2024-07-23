@@ -687,7 +687,6 @@ section .overlay {
   text-align: left;
   align-items: center;
   gap: 0;
-  padding: 1rem;
 }
 
 .locations .location .text-box {
@@ -698,7 +697,6 @@ section .overlay {
   justify-items: center;
   align-items: start;
   width: 100%;
-  padding: 2rem;
   text-align: left;
   background: #000;
   color: #fff;
@@ -1122,7 +1120,7 @@ section .overlay {
 
   .locations .location .text-box {
     width: 60%;
-    padding: 2rem;
+    padding: 0 2rem;
   }
 
   .locationslist .container {
