@@ -2,6 +2,7 @@
 speaker: Eric Trabb
 company: NAB
 role: SVP Business Development
+linkedin: https://www.linkedin.com/in/erictrabb/
 mainviewpoint: NAB
 dates: August 1st
 bio: >-

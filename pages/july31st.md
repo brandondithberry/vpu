@@ -1,6 +1,7 @@
 ---
 title: July 31st
-subtitle: Open to Creative Professionals
+subtitle: "July 31st event is tailored to Creative Professionals: Directors,
+  Cinematographers, Gaffers, Grips, DITs, and More!"
 invite: https://partiful.com/e/sD1PdjH8TfC9mcJ8D8R8
 image: /static/img/title-july31st.jpg
 description: Join us for an immersive one-day event designed for creative
