@@ -13,6 +13,7 @@ section: day
   <div class="container">
     <div class="text">
       <p>{{ description | safe }}</p>
+      {% if subtitle %}<h3>{{ subtitle }}</h3>{% endif %}
     </div>
     <div class="image">
       <img src="{{ image | safe }}" alt="Day Image" width="400" />
