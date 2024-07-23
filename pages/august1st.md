@@ -98,5 +98,5 @@ events:
     times: 5:00 PM - 8:00 PM
     type: Demo
     info: Sponsored by [Industry City](https://industrycity.com)
-layout: /layouts/day.njk
+layout: layouts/day.njk
 ---

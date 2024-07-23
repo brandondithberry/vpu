@@ -81,5 +81,5 @@ events:
     type: Networking
     info: Sponsored by [Lux Lighting](https://luxlightingllc.com) & [Kino
       Flo](https://kinoflo.com)
-layout: /layouts/day.njk
+layout: layouts/day.njk
 ---
