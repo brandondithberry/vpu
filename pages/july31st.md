@@ -59,7 +59,6 @@ events:
     moderator: Steve Giralt
     panelists:
       - Mike Bauman
-      - Alexander Maclean
       - Emma Gottlieb
   - title: Break
     times: 2:45 PM - 3:00 PM
@@ -82,6 +81,6 @@ events:
     type: Networking
     info: Sponsored by [Lux Lighting](https://luxlightingllc.com) & [Kino
       Flo](https://kinoflo.com)
-    location: The Garage Catered Lunch - Abel Cine
+    location: The Garage
 layout: layouts/day.njk
 ---
