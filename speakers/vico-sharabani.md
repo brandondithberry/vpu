@@ -22,5 +22,6 @@ bio: >-
 
 
   Vico is also involved with the TED community 'Ads Worth Spreading', Co-Organizer of TEDxEast, and completing the EMBA program at the Berlin School Of Creative Leadership.
+headshot: /static/img/vico.jpg
 layout: layouts/speaker.njk
 ---
