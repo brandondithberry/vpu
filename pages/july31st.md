@@ -18,7 +18,7 @@ events:
   - title: Arrival
     location: The Garage
     info: >-
-      Continental breakfast (Sponsored by [The Garage](https://the-garage.tv)
+      Continental breakfast (Sponsored by [The Garage)](https://the-garage.tv)
 
 
       [](https://the-garage.tv)Coffee Bar (Sponsored by [Lux Machina](https://www.luxmc.com/))
@@ -67,6 +67,7 @@ events:
     info: "**Panelists:** TBD"
     times: 3:00 PM - 4:00 PM
     type: Panel Discussion
+    moderator: Jeff Lee
   - title: Break / Move Back To The Garage
     times: 4:00 PM - 4:15 PM
   - title: Advanced Virtual Production Demo
