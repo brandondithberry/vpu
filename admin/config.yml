@@ -19,6 +19,7 @@ collections:
         file: "pages/july31st.md"
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
           - { label: Invite Link, name: invite, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Description, name: description, widget: markdown }
@@ -77,6 +78,7 @@ collections:
         file: "pages/august1st.md"
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
           - { label: Invite Link, name: invite, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Description, name: description, widget: markdown }

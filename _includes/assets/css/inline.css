@@ -52,7 +52,7 @@ main {
   width: 100%;
   margin: 0 auto;
   height: auto;
-  margin-top: 3.8rem;
+  margin-top: 3.2rem;
 }
 
 hr {
@@ -133,7 +133,7 @@ h3:not(:first-child) {
 
 .text {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
@@ -399,7 +399,7 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 4rem 1rem;
+  padding: 4rem 1.5rem;
   justify-content: center;
   align-items: start;
   overflow-x: hidden;
@@ -879,7 +879,7 @@ section .overlay {
 /* #region SCHEDULE */
 
 .page-hero {
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem 1.5rem 0 1.5rem;
   background: white;
   color: black;
 }
@@ -924,8 +924,13 @@ section .overlay {
   border: 1px solid #fff;
 }
 
+.description {
+  border-bottom: 2px solid white;
+}
+
 .description .container {
   display: flex;
+  flex-direction: column;
   place-content: center;
   place-items: center;
   justify-items: start;
@@ -1001,6 +1006,10 @@ section .overlay {
 @media screen and (min-width: 990px) {
   :root {
     font-size: 1.1rem;
+  }
+
+  main {
+    margin-top: 3.8rem;
   }
 
   .xxl-text {
@@ -1107,6 +1116,10 @@ section .overlay {
 
   .mobile-schedule {
     display: none;
+  }
+
+  .description .container {
+    flex-direction: row;
   }
 
   .locations .location {
