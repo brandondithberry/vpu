@@ -77,7 +77,8 @@ events:
       Virtual Art Dep, Production Design, Editing"
     times: 4:15 PM - 5:00 PM
     type: Demo
-    presenter: []
+    presenter:
+      - Steve Giralt
   - title: Happy Hour
     times: 5:00 PM - 7 PM
     type: Networking
