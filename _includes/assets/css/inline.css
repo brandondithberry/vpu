@@ -466,6 +466,7 @@ section .overlay {
   place-content: center;
   background: rgba(0, 0, 0, 0.6);
   z-index: 0;
+  overflow: hidden;
 }
 
 /* #endregion */
@@ -589,13 +590,26 @@ section .overlay {
 /* #region HOMEPAGE */
 
 .about {
+  position: relative;
   background: url(/static/img/background.jpg);
   background-size: cover;
-  text-align: center;
+  background-attachment: fixed;
   background-position: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.about .over {
+  display: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
 }
 
 .about .text {
+  display: block;
   max-width: 900px;
   padding: 6rem 2rem;
   text-align: left;
@@ -654,6 +668,11 @@ section .overlay {
 
 /* #region LOCATIONS */
 
+.locations {
+  background: white;
+  color: #000;
+}
+
 .locations .container {
   display: flex;
   flex-direction: column;
@@ -666,15 +685,23 @@ section .overlay {
   flex-direction: column;
   text-align: left;
   align-items: center;
-  background: var(--primary);
-  color: var(--background);
+  gap: 1rem;
 }
 
 .locations .location .text {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: start;
+  align-items: start;
   width: 100%;
-  padding: 0.5rem 1.5rem;
+  padding: 2rem;
   text-align: left;
+  background: #000;
+  color: #fff;
+  min-height: 10rem;
 }
 
 .locations .location .image {
@@ -1088,9 +1115,8 @@ section .overlay {
   }
 
   .locations .location .text {
-    position: relative;
     width: 60%;
-    padding: 1rem 2rem;
+    padding: 2rem;
   }
 
   .locationslist .container {
