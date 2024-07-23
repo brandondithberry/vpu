@@ -48,8 +48,8 @@ collections:
                 search_fields: ["speaker"]
                 value_field: "speaker"
                 display_fields: ["{{speaker}} - {{company}}"]
-                required: false
                 multiple: true
+                required: false
               - label: "Moderator"
                 name: "moderator"
                 widget: "relation"
@@ -108,8 +108,8 @@ collections:
                 search_fields: ["speaker"]
                 value_field: "speaker"
                 display_fields: ["{{speaker}} - {{company}}"]
-                required: false
                 multiple: true
+                required: false
               - label: "Moderator"
                 name: "moderator"
                 widget: "relation"
