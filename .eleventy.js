@@ -26,8 +26,8 @@ module.exports = function (eleventyConfig) {
 
   // Custom filters
   // Add a filter to find a speaker by name
-  eleventyConfig.addFilter("findBySlug", (slug, collection) => {
-    return collection.find((item) => item.data.slug === slug);
+  eleventyConfig.addFilter("findByName", (speaker, collection) => {
+    return collection.find((item) => item.data.speaker === speaker);
   });
 
   eleventyConfig.addFilter("find", function (array, key, value) {

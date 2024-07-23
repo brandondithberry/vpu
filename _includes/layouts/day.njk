@@ -77,8 +77,8 @@
       {% if event.presenter %}
       <td>
         {% for speaker in speakers %} 
-        {% set speakerData = collections.speakers | findBySlug(event.presenter) %}
-        <a href="/speakers/{{ event.presenter | safe }}/index.html">{{ speakerData.name | safe }}</a>
+        {% set speakerData = collections.speakers | findByName(event.presenter) %}
+        <a href="/speakers/{{ event.presenter | safe }}/index.html">{{ speakerData.speaker | safe }}</a>
         {% endfor %}
       </td>
       {% endif %}
