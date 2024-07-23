@@ -15,8 +15,9 @@ description: Join us for an immersive one-day event designed for creative
 events:
   - title: Arrival
     location: The Garage
-    info: Continental breakfast (Sponsored by [The Garage](https://the-garage.tv))
-      and Coffee Bar (Sponsored by [Lux Machina](https://www.luxmc.com/))
+    info: Continental breakfast (Sponsored by [The
+      Garage](https://the-garage.tv){:target="_blank"}) and Coffee Bar
+      (Sponsored by [Lux Machina](https://www.luxmc.com/){:target="_blank"})
     times: 8:30 AM - 9:30 AM
   - title: Opening Remarks
     location: The Garage
@@ -29,7 +30,7 @@ events:
     presenter: steve-giralt
   - title: The Basics of Virtual Production
     info: |-
-      Presenter - Emilia Page from Lux Machina
+      Presenter - Emilia Page from [Lux Machina](https://www.luxmc.com)
 
       Topics Covered: TBD
     location: The Garage
@@ -82,7 +83,7 @@ events:
   - title: Happy Hour
     times: 5:00 PM - 7 PM
     type: Networking
-    info: Sponsored by [Lux Lighting](https://luxlightingllc.com) & [Kino
-      Flo](https://kinoflo.com)
+    info: Sponsored by [Lux Lighting](https://luxlightingllc.com){:target="_blank"}
+      & [Kino Flo](https://kinoflo.com){:target="_blank"}
 layout: /layouts/day.njk
 ---
