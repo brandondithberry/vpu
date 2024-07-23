@@ -973,10 +973,14 @@ section .overlay {
 }
 
 .profile article {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   color: #000;
   padding: 3rem;
   width: 100%;
+  place-items: center;
+  place-content: center;
 }
 
 /* #endregion */

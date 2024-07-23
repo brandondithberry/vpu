@@ -17,11 +17,9 @@ section: speaker
       <div class="overview">
         <h4>{{ role }}</h4>
         <h2>{{ company }}</h2>
-        {% if event.type %}
+        {% if type %}
         <p>{{ type }}</p>
-        {% endif %} {% if event.linkedin %}<a
-          href="{{ linkedin }}"
-          target="_blank"
+        {% endif %} {% if linkedin %}<a href="{{ linkedin }}" target="_blank"
           ><img src="/static/img/linkedin.png" alt="linkedin" width="40" /></a
         >{% endif %}
       </div>
@@ -29,18 +27,12 @@ section: speaker
     <article>
       <div class="bio">
         <h4>Main Viewpoint</h4>
-        {% if event.mainviewpoint %}
+        {% if mainviewpoint %}
         <h2>{{ mainviewpoint }}</h2>
-        {% endif %} {% if event.dates %}
+        {% endif %} {% if dates %}
         <h4><b>Attending: </b>{{ dates }}</h4>
-        {% endif %} {% if event.bio %}
+        {% endif %} {% if bio %}
         <p>{{ bio | markdown | safe }}</p>
-        {% endif %}
-      </div>
-      <div class="events">
-        <h3>Events</h3>
-        {% if event.event %}
-        <p>{{ event | markdown | safe }}</p>
         {% endif %}
       </div>
     </article>
