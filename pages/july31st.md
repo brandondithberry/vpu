@@ -28,10 +28,11 @@ events:
     info: |-
       The importance of innovation at the intersection of Art and Technology.
 
-      **Topics Covered:** Innovation, Technology, Advertising, Craft.
+      **Topics:** Innovation, Technology, Advertising, Craft.
     times: 9:30 AM - 10:00 AM
     type: Presentation
-    presenter: Emilia Page
+    presenter:
+      - Steve Giralt
   - title: The Basics of Virtual Production
     info: "**Topics Covered:** History of Virtual production, Major components of a
       Virtual Production setup, 2D, 2.5D, and 3D"
@@ -76,7 +77,8 @@ events:
       Virtual Art Dep, Production Design, Editing"
     times: 4:15 PM - 5:00 PM
     type: Demo
-    presenter: []
+    presenter:
+      - Steve Giralt
   - title: Happy Hour
     times: 5:00 PM - 7 PM
     type: Networking
