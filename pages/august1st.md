@@ -96,7 +96,7 @@ events:
       Networking Happy Hour"
     location: The Garage
     times: 5:00 PM - 8:00 PM
-    type: Demo
+    type: Networking
     info: Sponsored by [Industry City](https://industrycity.com)
 layout: layouts/day.njk
 ---
