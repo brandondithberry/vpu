@@ -565,7 +565,7 @@ section .overlay {
 
 .topics p {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-style: italic;
   font-weight: bold;
   letter-spacing: 0.06rem;
@@ -711,7 +711,7 @@ section .overlay {
 
 .locationslist .location {
   display: grid;
-  grid-template: auto / 2fr 1fr;
+  grid-template: auto / 1fr;
   place-content: center;
   place-items: center;
   gap: 1rem;
@@ -719,7 +719,7 @@ section .overlay {
   height: 100%;
 }
 
-.locationslist .location .textbox {
+.locationslist .textbox {
   display: flex;
   flex-direction: column;
   padding: 2rem;
