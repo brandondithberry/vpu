@@ -317,7 +317,7 @@ span.active {
   left: 50%;
   transform: translateX(-50%);
   max-width: 400px;
-  top: 5rem;
+  top: 4rem;
   z-index: 1000;
   background: white;
   box-shadow: 0 1px 5px #fff;
