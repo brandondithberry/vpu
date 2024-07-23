@@ -560,7 +560,7 @@ section .overlay {
 .topics {
   padding: 0;
   text-align: justify;
-  border-bottom: 2px solid white;
+  border-top: 2px solid white;
 }
 
 .topics p {
@@ -591,10 +591,15 @@ section .overlay {
 }
 
 .about .text {
-  display: block;
+  display: flex;
+  flex-direction: column;
   max-width: 750px;
   padding: 10rem 2rem;
   text-align: left;
+}
+
+.about h3>a {
+  text-decoration: underline;
 }
 
 .days .container {
@@ -1130,6 +1135,10 @@ section .overlay {
     top: -5rem;
     width: 20%;
     max-width: 220px;
+  }
+
+  .about .text {
+    text-align: center;
   }
 
   .partnerlist .grid {
