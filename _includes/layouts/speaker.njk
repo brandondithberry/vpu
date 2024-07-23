@@ -26,12 +26,11 @@ section: speaker
         <h4>Main Viewpoint</h4>
         <h2>{{ mainviewpoint }}</h2>
         <h4><b>Attending: </b>{{ dates }}</h4>
-        <p>{{ bio }}</p>
+        <p>{{ bio  | markdown | safe }}</p>
       </div>
       <div class="events">
         <h3>Events</h3>
-        <a href="http://" target="_blank">Virtual Production Event</a>
-        <a href="http://" target="_blank">Panel Topic Test</a>
+        <p>{{ event | markdown | safe }}</p>
       </div>
     </article>
   </div>
