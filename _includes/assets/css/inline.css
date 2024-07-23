@@ -75,7 +75,7 @@ a[href]:visited {
   transition: all 0.2s ease-in-out;
 }
 
-a[href]:hover {
+a[href]:not(:has(button)):hover {
   opacity: 0.5;
 }
 
@@ -598,7 +598,7 @@ section .overlay {
   text-align: left;
 }
 
-.about h3>a {
+.about h3 > a {
   text-decoration: underline;
 }
 
@@ -783,6 +783,22 @@ section .overlay {
 
 .signup .day img {
   height: 80px;
+  width: auto;
+}
+
+.signup-alt .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.signup-alt .day {
+  border: 2px solid white;
+  padding: 3rem 1.5rem;
+}
+
+.signup-alt .day img {
+  height: 100px;
   width: auto;
 }
 
