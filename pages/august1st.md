@@ -49,12 +49,12 @@ events:
     times: 10:30 AM - 11:30 AM
     type: Demo
     presenter: steve-giralt
-  - title: Move to Abel Theater
+  - title: Move to Abel Cine Theater
     times: 11:30 AM - 12:00 PM
     info: ""
   - title: "Virtual Production for Commercials: Practical Approaches to Workflow and
       Budgeting"
-    location: Abel Theater
+    location: Abel Cine Theater
     info: "**[](https://www.abelcine.com)Topics Covered:** Virtual Production
       Workflow, Budgeting, Timelines, and Production Considerations for Virtual
       Production Commercials."
@@ -69,7 +69,7 @@ events:
     times: 1:00 PM - 2:00 PM
     info: Sponsored by [Abel Cine](https://www.abelcine.com)
   - title: Could Your Favorite Ads Be Shot with Virtual Production? A Deep Dive
-    location: Abel Theater
+    location: Abel Cine Theater
     info: "**Topics Covered:** Virtual Production Storytelling, Virtual Art
       Department, Production Design, Creativity, Production"
     times: 2:00 PM - 3:00 PM
