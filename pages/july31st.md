@@ -58,6 +58,8 @@ events:
     moderator: steve-giralt
     panelists:
       - mike-bauman
+      - alexander-maclean
+      - emma-gottlieb
   - title: Break
     times: 2:45 PM - 3:00 PM
   - title: "Mastering the Virtual: Educating Film Crews on Virtual Production"
