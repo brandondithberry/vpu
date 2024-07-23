@@ -91,7 +91,8 @@ events:
       Production more Accessible, Demo on the Rosco RDX System"
     times: 3:30 PM - 4:30 PM
     type: Demo
-    presenter: []
+    presenter:
+      - "Sang-Jin Bae "
   - title: Return to The Garage
     times: 4:30 PM - 5:00 PM
     info: "[](https://industrycity.com)"
