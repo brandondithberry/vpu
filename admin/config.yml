@@ -47,7 +47,7 @@ collections:
                 collection: "speakers"
                 search_fields: ["speaker"]
                 value_field: "{{slug}}"
-                display_fields: ["speaker", ", ", "company"]
+                display_fields: ["{{ speaker }}, {{ company }}"]
                 required: false
               - label: "Moderator"
                 name: "moderator"
@@ -55,7 +55,7 @@ collections:
                 collection: "speakers"
                 search_fields: ["speaker"]
                 value_field: "{{slug}}"
-                display_fields: ["speaker", ", ", "company"]
+                display_fields: ["{{ speaker }}, {{ company }}"]
                 required: false
               - label: "Panelists"
                 name: "panelists"
@@ -63,7 +63,7 @@ collections:
                 collection: "speakers"
                 search_fields: ["speaker"]
                 value_field: "{{slug}}"
-                display_fields: ["speaker", ", ", "company"]
+                display_fields: ["{{ speaker }}, {{ company }}"]
                 multiple: true
                 required: false
               - { label: Info, name: info, widget: markdown, required: false }
@@ -106,7 +106,7 @@ collections:
                 collection: "speakers"
                 search_fields: ["speaker"]
                 value_field: "{{slug}}"
-                display_fields: ["speaker", ", ", "company"]
+                display_fields: ["{{ speaker }}, {{ company }}"]
                 required: false
               - label: "Moderator"
                 name: "moderator"
@@ -114,7 +114,7 @@ collections:
                 collection: "speakers"
                 search_fields: ["speaker"]
                 value_field: "{{slug}}"
-                display_fields: ["speaker", ", ", "company"]
+                display_fields: ["{{ speaker }}, {{ company }}"]
                 required: false
               - label: "Panelists"
                 name: "panelists"
@@ -122,7 +122,7 @@ collections:
                 collection: "speakers"
                 search_fields: ["speaker"]
                 value_field: "speaker"
-                display_fields: ["speaker", ", ", "company"]
+                display_fields: ["{{ speaker }}, {{ company }}"]
                 multiple: true
                 required: false
               - { label: Info, name: info, widget: markdown, required: false }
