@@ -52,6 +52,7 @@ main {
   width: 100%;
   margin: 0 auto;
   height: auto;
+  margin-top: 3.8rem;
 }
 
 hr {
@@ -84,7 +85,11 @@ img {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 h1,
@@ -115,7 +120,7 @@ h3:not(:first-child) {
 }
 
 .xl-text {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .lg-text {
@@ -221,7 +226,7 @@ button:hover {
 /* #region HEADER & MENU */
 
 header {
-  position: sticky;
+  position: fixed;
   display: flex;
   top: 0;
   width: 100%;
@@ -236,10 +241,10 @@ header {
 header .container {
   display: flex;
   color: black !important;
-  width: 90%;
+  width: 100%;
   max-width: 1360px;
   margin: 0 auto;
-  padding: 0.5rem 1.25rem;
+  padding: 0.8rem;
   justify-content: space-between;
   align-content: center;
   align-items: center;
@@ -277,7 +282,7 @@ header .logo {
   display: flex;
   justify-content: center;
   width: 38vw;
-  max-width: 150px;
+  max-width: 140px;
 }
 
 header .logo img {
@@ -363,37 +368,6 @@ footer {
   text-align: center;
   place-content: center;
   place-items: center;
-}
-
-footer .signup {
-  padding: 1rem;
-}
-
-footer .signup .container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 1rem;
-  place-items: center;
-  place-content: center;
-  margin: 0 auto;
-  max-width: 900px;
-}
-
-footer .signup .day {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid white;
-  padding: 1rem;
-  width: 100%;
-  text-align: center;
-  place-content: center;
-  place-items: center;
-}
-
-footer .signup .day img {
-  height: 100px;
-  margin-bottom: 1.5rem;
 }
 
 footer .legals {
@@ -609,7 +583,7 @@ section .overlay {
 
 .about .text {
   display: block;
-  max-width: 900px;
+  max-width: 800px;
   padding: 10rem 2rem;
   text-align: left;
 }
@@ -767,6 +741,48 @@ section .overlay {
   width: 100%;
   height: 15rem;
   background-size: cover;
+}
+
+/* #endregion */
+
+/* #region SIGNUP */
+
+.signup {
+  padding: 3rem 1rem;
+  background-color: white;
+  color: black;
+}
+
+.signup .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  place-items: center;
+  place-content: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.signup .day {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  gap: 1rem;
+}
+
+.signup .day h2 {
+  font-size: 1.8rem;
+}
+
+.signup .day img {
+  height: 80px;
+  width: auto;
 }
 
 /* #endregion */
@@ -968,7 +984,7 @@ section .overlay {
     width: 100%;
   }
 
-  footer .signup .container {
+  .signup .container {
     flex-direction: row;
   }
 
@@ -1007,11 +1023,11 @@ section .overlay {
   }
 
   .xl-text {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   .lg-text {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .sm-text {
