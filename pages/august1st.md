@@ -78,6 +78,7 @@ events:
     panelists:
       - vico-sharabani
       - barry-willams
+      - ian-messina
   - title: Move to NYU Tisch Martin Scorsese Virtual Production Center
     times: 3:00 PM - 3:30 PM
     info: ""
@@ -87,6 +88,7 @@ events:
       Production more Accessible, Demo on the Rosco RDX System"
     times: 3:30 PM - 4:30 PM
     type: Demo
+    presenter: sang-jin-bae
   - title: Return to The Garage
     times: 4:30 PM - 5:00 PM
     info: "[](https://industrycity.com)"
