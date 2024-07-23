@@ -26,14 +26,14 @@ events:
     location: The Garage
     times: 9:30 AM - 9:45 AM
     type: Presentation
-    presenter: eric-trabb
+    presenter: Eric Trabb
   - times: 9:45 AM - 10:00 AM
     title: The importance of innovation at the intersection of Art, Advertising, and
       Technology
     location: The Garage
     type: Presentation
     info: "**Topics:** Innovation, Technology, Advertising, Craft"
-    presenter: steve-giralt
+    presenter: Steve Giralt
   - title: " Introduction to Virtual Production: A Primer by Lux Machina"
     location: The Garage
     info: "**Topics Covered:** History of Virtual Production, Major components of a
@@ -41,14 +41,14 @@ events:
       from Pre to Post Production"
     times: 10:00 AM - 10:30 AM
     type: Presentation
-    presenter: emilia-page
+    presenter: Emilia Page
   - title: 3D Virtual Production
     location: The Garage
     info: "**Topics Covered:** Virtual Art Department, Production Design, and
       Lighting for Virtual Production. On-Set adjustments to the Unreal world"
     times: 10:30 AM - 11:30 AM
     type: Demo
-    presenter: steve-giralt
+    presenter: Steve Giralt
   - title: Move to Abel Cine Theater
     times: 11:30 AM - 12:00 PM
     info: ""
@@ -61,10 +61,10 @@ events:
     times: 12:00 PM - 1:00 PM
     type: Panel Discussion
     panelists:
-      - halie-graham
-      - ross-fenter
-      - alex-coppedge
-      - paola-andrea
+      - Halie Graham
+      - Ross Fenter
+      - Alex Coppedge
+      - Paola Andrea
   - title: Catered Lunch
     times: 1:00 PM - 2:00 PM
     info: Sponsored by [Abel Cine](https://www.abelcine.com)
@@ -74,11 +74,11 @@ events:
       Department, Production Design, Creativity, Production"
     times: 2:00 PM - 3:00 PM
     type: Panel Discussion
-    moderator: steve-giralt
+    moderator: Steve Giralt
     panelists:
-      - vico-sharabani
-      - barry-willams
-      - ian-messina
+      - Vico Sharabani
+      - Barry Willams
+      - Ian Messina
   - title: Move to NYU Tisch Martin Scorsese Virtual Production Center
     times: 3:00 PM - 3:30 PM
     info: ""
@@ -88,7 +88,7 @@ events:
       Production more Accessible, Demo on the Rosco RDX System"
     times: 3:30 PM - 4:30 PM
     type: Demo
-    presenter: sang-jin-bae
+    presenter: Sang-Jin Bae
   - title: Return to The Garage
     times: 4:30 PM - 5:00 PM
     info: "[](https://industrycity.com)"

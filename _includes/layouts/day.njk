@@ -46,6 +46,12 @@ Discussion": "#210e2e", "Networking": "#0e1c2e" } %}
         <td>
           <span><b>Location: </b></span>{{ event.location | safe }}
         </td>
+        {% endif %} {% if event.presenter %}
+        <td><a href="/speakers/index.html">{{ event.presenter }}</a></td>
+        {% endif %} {% if event.moderator %}
+        <td><a href="/speakers/index.html">{{ event.moderator }}</a></td>
+        {% endif %} {% if event.panelists %}
+        <td><a href="/speakers/index.html">{{ event.panelists }}</a></td>
         {% endif %} {% if event.info %}
         <td>{{ event.info | markdown | safe }}</td>
         {% endif %}
@@ -70,14 +76,26 @@ Discussion": "#210e2e", "Networking": "#0e1c2e" } %}
     </tr>
     {% for event in events %}
     <tr style="background: {{ eventColors[event.type] }}; color: white">
-      <td>{% if event.times %} {{ event.times }} {% endif %}</td>
+      <td class="times">{% if event.times %} {{ event.times }} {% endif %}</td>
       <td>{% if event.type %}{{ event.type }}{% endif %}</td>
       <td>{% if event.title %}{{ event.title }}{% endif %}</td>
       <td>{% if event.location %}{{ event.location }}{% endif %}</td>
-      <td>{% if event.presenter %}{{ event.presenter }}{% endif %}</td>
-      <td>{% if event.moderator %}{{ event.moderator }}{% endif %}</td>
-      <td>{% if event.panelists %}{{ event.panelists }}{% endif %}</td>
-      <td>{% if event.info %}{{ event.info | markdown }}{% endif %}</td>
+      <td>
+        <a href="/speakers/index.html"
+          >{% if event.presenter %}{{ event.presenter }}{% endif %}</a
+        >
+      </td>
+      <td>
+        <a href="/speakers/index.html"
+          >{% if event.moderator %}{{ event.moderator }}{% endif %}</a
+        >
+      </td>
+      <td>
+        <a href="/speakers/index.html"
+          >{% if event.panelists %}{{ event.panelists }}{% endif %}</a
+        >
+      </td>
+      <td>{% if event.info %}{{ event.info | markdown | safe }}{% endif %}</td>
     </tr>
     {% endfor %}
   </table>
