@@ -1,5 +1,6 @@
 ---
 title: July 31st
+subtitle: Open to Creative Professionals
 invite: https://partiful.com/e/sD1PdjH8TfC9mcJ8D8R8
 image: /static/img/title-july31st.jpg
 description: Join us for an immersive one-day event designed for creative
@@ -15,75 +16,68 @@ description: Join us for an immersive one-day event designed for creative
 events:
   - title: Arrival
     location: The Garage
-    info: Continental breakfast (Sponsored by [The
-      Garage](https://the-garage.tv){:target="_blank"}) and Coffee Bar
-      (Sponsored by [Lux Machina](https://www.luxmc.com/){:target="_blank"})
+    info: >-
+      Continental breakfast (Sponsored by [The Garage](https://the-garage.tv)
+
+
+      [](https://the-garage.tv)Coffee Bar (Sponsored by [Lux Machina](https://www.luxmc.com/))
     times: 8:30 AM - 9:30 AM
   - title: Opening Remarks
     location: The Garage
     info: |-
-      Presenter - Steve Giralt from The Garage
+      The importance of innovation at the intersection of Art and Technology.
 
-      Topics Covered: TBD
+      **Topics Covered:** Innovation, Technology, Advertising, Craft.
     times: 9:30 AM - 10:00 AM
     type: Presentation
     presenter: steve-giralt
   - title: The Basics of Virtual Production
-    info: |-
-      Presenter - Emilia Page from [Lux Machina](https://www.luxmc.com)
-
-      Topics Covered: TBD
+    info: "**Topics Covered:** History of Virtual production, Major components of a
+      Virtual Production setup, 2D, 2.5D, and 3D"
     location: The Garage
     times: 10:00 AM - 11:00 AM
     type: Presentation
+    presenter: emilia-page
   - title: Break
     times: 11:00 AM - 11:15 AM
   - title: 3D Virtual Production
-    info: |-
-      Presenter - Steve Giralt from The Garage
-
-      Topics Covered: TBD
+    info: "**Topics Covered:** Virtual Art Department, Production Design, and
+      Lighting for Virtual Production. On-set adjustments to the Unreal world"
     location: The Garage
     times: 11:15 AM - 12:30 PM
     type: Demo
+    presenter: steve-giralt
   - title: Lunch Break at Industry City
     times: 12:30 PM - 1:30 PM
-  - title: Virtual and On-Set lighting for Virtual Production
+  - title: "Behind the Pixels: Techniques and Challenges in Lighting for Virtual
+      Production"
     location: Abel Theater
-    info: |-
-      Moderator: TBD
-
-      Panelists: TBD + Bio’s
-
-      Topics Covered: TBD
+    info: ""
     times: 1:30 PM - 2:45 PM
     type: Panel Discussion
+    moderator: steve-giralt
+    panelists:
+      - mike-bauman
   - title: Break
     times: 2:45 PM - 3:00 PM
-  - title: "TBD Panel #2 + Q&A"
+  - title: "Mastering the Virtual: Educating Film Crews on Virtual Production"
     location: Abel Theater
-    info: |-
-      Moderator: TBD
-
-      Panelists: TBD + Bio’s
-
-      Topics Covered: TBD
+    info: ""
     times: 3:00 PM - 4:00 PM
     type: Panel Discussion
   - title: Break / Move Back To The Garage
     times: 4:00 PM - 4:15 PM
   - title: Advanced Virtual Production Demo
     location: The Garage
-    info: |-
-      Presenter - Steve Giralt from The Garage
-
-      Topics Covered: TBD
+    info: "**Topics Covered:** Motion Control, Ghost Frame, Frame Sync lighting,
+      Virtual Art Dep, Production Design, Editing"
     times: 4:15 PM - 5:00 PM
     type: Demo
+    presenter: steve-giralt
   - title: Happy Hour
     times: 5:00 PM - 7 PM
     type: Networking
-    info: Sponsored by [Lux Lighting](https://luxlightingllc.com){:target="_blank"}
-      & [Kino Flo](https://kinoflo.com){:target="_blank"}
+    info: Sponsored by [Lux Lighting](https://luxlightingllc.com) & [Kino
+      Flo](https://kinoflo.com)
 layout: /layouts/day.njk
 ---
