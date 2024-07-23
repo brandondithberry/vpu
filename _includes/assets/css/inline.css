@@ -438,7 +438,6 @@ section {
   border-color: white;
   width: 100%;
   height: auto;
-  border-bottom: 2px solid white;
   text-align: center;
 }
 
@@ -618,6 +617,7 @@ section .overlay {
 .topics {
   padding: 0;
   text-align: justify;
+  border-bottom: 2px solid white;
 }
 
 .topics p {
