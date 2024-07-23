@@ -698,6 +698,7 @@ section .overlay {
   max-width: 1360px;
   place-content: center;
   place-items: center;
+  gap: 1rem;
 }
 
 .locationslist .map {
@@ -712,6 +713,7 @@ section .overlay {
   place-items: center;
   gap: 1rem;
   text-align: left;
+  background: none;
 }
 
 .locationslist .location {
@@ -1283,6 +1285,7 @@ section .overlay {
     display: flex;
     flex-direction: row;
     max-width: 1360px;
+    gap: 1rem;
   }
 
   .locationslist .map {
