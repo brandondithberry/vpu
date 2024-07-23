@@ -52,7 +52,7 @@ main {
   width: 100%;
   margin: 0 auto;
   height: auto;
-  margin-top: 3.2rem;
+  margin-top: 3.5rem;
 }
 
 hr {
@@ -443,7 +443,7 @@ section .overlay {
 
 .hero {
   border-bottom: 1px solid white;
-  height: 12rem;
+  height: 14rem;
   overflow: hidden;
 }
 
