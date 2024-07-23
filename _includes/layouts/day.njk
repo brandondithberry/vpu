@@ -44,6 +44,12 @@ section: days
         <td>
           <span><b>Location: </b></span>{{ event.location }}
         </td>
+        {% endif %} {% if event.presenter %}
+        <td>{{ event.presenter }}</td>
+        {% endif %} {% if event.moderator %}
+        <td>{{ event.moderator }}</td>
+        {% endif %} {% if event.panelists %}
+        <td>{{ event.panelists }}</td>
         {% endif %} {% if event.info %}
         <td>
           {{ event.info | markdown | safe }}
@@ -62,6 +68,9 @@ section: days
       <th>Type</th>
       <th>Event</th>
       <th>Location</th>
+      <th>Presenter</th>
+      <th>Moderator</th>
+      <th>Panelists</th>
       <th>Info</th>
     </tr>
     {% set eventColors = { "Presentation": "#2e0e0e", "Demo": "#0e2e26", "Panel
@@ -81,6 +90,18 @@ section: days
       <td>
         {{ event.location }}
       </td>
+      {% else %}
+      <td></td>
+      {% endif %} {% if event.presenter %}
+      <td>{{ event.presenter }}</td>
+      {% else %}
+      <td></td>
+      {% endif %} {% if event.moderator %}
+      <td>{{ event.moderator }}</td>
+      {% else %}
+      <td></td>
+      {% endif %} {% if event.panelists %}
+      <td>{{ event.panelists }}</td>
       {% else %}
       <td></td>
       {% endif %} {% if event.info %}

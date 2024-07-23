@@ -24,10 +24,14 @@ module.exports = function (eleventyConfig) {
     });
   };
 
+  eleventyConfig.addFilter("find", function (array, key, value) {
+    return array.find((item) => item[key] === value);
+  });
+
   createCollectionWithSlug("speakers", "speakers/*.md");
   createCollectionWithSlug("partners", "partners/*.md");
   createCollectionWithSlug("locations", "locations/*.md");
-  
+
   // Filters
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
