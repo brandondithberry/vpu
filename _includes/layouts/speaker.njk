@@ -2,3 +2,37 @@
 layout: layouts/base.njk
 section: speaker
 ---
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="xxl-text">{{ title }}</h1>
+  </div>
+</section>
+<section class="profile">
+  <div class="container">
+    <sidebar>
+      <div class="headshot">
+        <img src="{{ headshot }}" alt="Headshot" />
+      </div>
+      <div class="overview">
+        <h4>{{ role }}</h4>
+        <h2>{{ company }}</h2>
+        <p>{{ type }}</p>
+        <a href="{{ linkedin }}" target="_blank"><img src="/static/img/linkedin.png" alt="linkedin" width="40"></a>
+      </div>
+    </sidebar>
+    <article>
+      <div class="bio">
+        <h4>Main Viewpoint</h4>
+        <h2>{{ mainviewpoint }}</h2>
+        <h4><b>Attending: </b>{{ dates }}</h4>
+        <p>{{ bio }}</p>
+      </div>
+      <div class="events">
+        <h3>Events</h3>
+        <a href="http://" target="_blank">Virtual Production Event</a>
+        <a href="http://" target="_blank">Panel Topic Test</a>
+      </div>
+    </article>
+  </div>
+</section>
