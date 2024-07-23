@@ -76,7 +76,7 @@ a[href]:visited {
 }
 
 a[href]:hover {
-  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
 }
 
 img {
@@ -897,6 +897,11 @@ section .overlay {
 
 .schedule {
   display: none;
+}
+
+.schedule a,
+.mobile-schedule a {
+  text-decoration: underline;
 }
 
 .mobile-schedule {
