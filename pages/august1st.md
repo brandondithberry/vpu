@@ -22,66 +22,74 @@ events:
       Coffee Bar (Sponsored by [Lux Machina)](https://www.luxmc.com)
     times: 8:30 AM - 9:30 AM
   - title: Opening Remarks
-    info: |-
-      Presenter - Steve Giralt from The Garage and Eric Trabb from NAB
-
-      Topics Covered: TBD
+    info: ""
     location: The Garage
-    times: 9:30 AM - 10:00 AM
+    times: 9:30 AM - 9:45 AM
     type: Presentation
-  - title: The Basics of Virtual Production
+    presenter: eric-trabb
+  - times: 9:45 AM - 10:00 AM
+    title: The importance of innovation at the intersection of Art, Advertising, and
+      Technology
     location: The Garage
-    info: |-
-      Presenter - Emilia Page from [Lux Machina](https://www.luxmc.com)
-
-      Topics Covered: TBD
+    type: Presentation
+    info: "**Topics:** Innovation, Technology, Advertising, Craft"
+    presenter: steve-giralt
+  - title: " Introduction to Virtual Production: A Primer by Lux Machina"
+    location: The Garage
+    info: "**Topics Covered:** History of Virtual Production, Major components of a
+      Virtual Production setup, 2D vs 3D Backgrounds, and other considerations
+      from Pre to Post Production"
     times: 10:00 AM - 10:30 AM
     type: Presentation
+    presenter: emilia-page
   - title: 3D Virtual Production
     location: The Garage
-    info: |-
-      Presenter - Steve Giralt from [The Garage](https://the-garage.tv)
-
-      Topics Covered: TBD
+    info: "**Topics Covered:** Virtual Art Department, Production Design, and
+      Lighting for Virtual Production. On-Set adjustments to the Unreal world"
     times: 10:30 AM - 11:30 AM
     type: Demo
+    presenter: steve-giralt
   - title: Move to Abel Theater
     times: 11:30 AM - 12:00 PM
-  - title: Virtual Production Workflow and Budgeting
+    info: ""
+  - title: "Virtual Production for Commercials: Practical Approaches to Workflow and
+      Budgeting"
     location: Abel Theater
-    info: |-
-      Moderator: TBD
-
-      Panelists: TBD + Bio’s
-
-      Topics Covered: TBD
+    info: "**[](https://www.abelcine.com)Topics Covered:** Virtual Production
+      Workflow, Budgeting, Timelines, and Production Considerations for Virtual
+      Production Commercials."
     times: 12:00 PM - 1:00 PM
     type: Panel Discussion
+    panelists:
+      - halie-graham
+      - ross-fenter
+      - alex-coppedge
+      - paola-andrea
   - title: Catered Lunch
     times: 1:00 PM - 2:00 PM
     info: Sponsored by [Abel Cine](https://www.abelcine.com)
-  - title: Could I shoot ‘This’ with Virtual Production?
+  - title: Could Your Favorite Ads Be Shot with Virtual Production? A Deep Dive
     location: Abel Theater
-    info: |-
-      Moderator: TBD
-
-      Panelists: TBD + Bio’s
-
-      Topics Covered: TBD
+    info: "**Topics Covered:** Virtual Production Storytelling, Virtual Art
+      Department, Production Design, Creativity, Production"
     times: 2:00 PM - 3:00 PM
     type: Panel Discussion
+    moderator: steve-giralt
+    panelists:
+      - vico-sharabani
+      - barry-willams
   - title: Move to NYU Tisch Martin Scorsese Virtual Production Center
     times: 3:00 PM - 3:30 PM
+    info: ""
   - title: Martin Scorsese Virtual Production Center Demo with RDX / Rosco
     location: "NYU Tisch Martin Scorsese Virtual Production Center "
-    info: |-
-      Presenter - Sang-Jin Bae from NYU
-
-      Topics Covered: TBD
+    info: "**Topics Covered:** Education and Virtual Production, Making Virtual
+      Production more Accessible, Demo on the Rosco RDX System"
     times: 3:30 PM - 4:30 PM
     type: Demo
   - title: Return to The Garage
     times: 4:30 PM - 5:00 PM
+    info: "[](https://industrycity.com)"
   - title: "HAPPY HOUR + DEMO: Interactive Advanced Virtual Production Demo and
       Networking Happy Hour"
     location: The Garage
