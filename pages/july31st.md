@@ -51,6 +51,8 @@ events:
     presenter: Steve Giralt
   - title: Lunch Break at Industry City
     times: 12:30 PM - 1:30 PM
+    info: Food Options at the [Industry CIty Food
+      Hall](https://industrycity.com/eat-drink/?business-category=food-hall&page-number=2)
   - title: "Behind the Pixels: Techniques and Challenges in Lighting for Virtual
       Production"
     location: Abel Cine Theater
