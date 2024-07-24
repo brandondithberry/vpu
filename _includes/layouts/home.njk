@@ -113,30 +113,14 @@ section: home
     </div>
     <h3>Secondary Partners</h3>
     <div class="small-logos">
-      <a href="https://industrycity.com/" target="_blank"
-        ><img src="/static/img/industry-city.png" alt="Industry City"
+      {% set partnerslist = collections.partners %}
+      {% for partner in partnerslist %}
+      {% if partner.data.type === "Secondary Partner" %}
+      <a href="{{ partner.data.website }}" target="_blank"
+        ><img src="{{ partner.data.logo }}" alt="{{ partner.data.logo }} Logo"
       /></a>
-      <a href="https://www.assimilateinc.com/" target="_blank"
-        ><img src="/static/img/Assimilate-logo-JPG.webp" alt="Assimilate"
-      /></a>
-      <a href="https://www.quasarscience.com/" target="_blank"
-        ><img src="/static/img/quesar.png" alt="Quasar"
-      /></a>
-      <a href="https://creamsource.com/" target="_blank"
-        ><img src="/static/img/creamsource.png" alt="Cream Source"
-      /></a>
-      <a href="https://kinoflo.com" target="_blank"
-        ><img src="/static/img/kino.jpg" alt="Reality VFX"
-      /></a>
-      <a href="https://hologen.io/" target="_blank"
-        ><img
-          src="/static/img/HologenTransparentBGLogo_WhiteText.png"
-          alt="Hologen io"
-      /></a>
-      <a href="https://www.realityvfx.com/" target="_blank"
-        ><img src="/static/img/realityvfx.jpeg" alt="Reality VFX"
-      /></a>
-      <div></div>
+      {% endif %}
+      {% endfor %}
     </div>
     <h4 style="margin-top: 3rem">
       <a href="/partners/index.html"
