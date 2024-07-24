@@ -33,7 +33,7 @@ events:
     type: Presentation
     presenter:
       - Steve Giralt
-  - title: The Basics of Virtual Production
+  - title: " Introduction to Virtual Production: A Primer by Lux Machina"
     info: "**Topics Covered:** History of Virtual production, Major components of a
       Virtual Production setup, 2D, 2.5D, and 3D"
     location: The Garage
