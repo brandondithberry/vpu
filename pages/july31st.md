@@ -39,7 +39,9 @@ events:
     location: The Garage
     times: 10:00 AM - 11:00 AM
     type: Presentation
-    presenter: Emilia Page
+    presenter:
+      - Emilia Page
+      - Lauren Paul
   - title: Break
     times: 11:00 AM - 11:15 AM
   - title: 3D Virtual Production
