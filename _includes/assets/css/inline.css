@@ -1117,7 +1117,7 @@ section .overlay {
   }
 
   .secondary-partners .grid {
-    grid-template: auto / repeat(5, 1fr);
+    grid-template: auto / repeat(4, 1fr);
   }
 
   .signup .container {

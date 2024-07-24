@@ -87,33 +87,22 @@ section: home
     </div>
   </div>
 </section>
+{% set partnerslist = collections.partners %}
 <section class="partners">
   <div class="container">
     <h2 style="margin-bottom: 3rem">SPECIAL THANKS TO OUR PARTNERS</h2>
     <h3>Lead Partners</h3>
     <div class="large-logos">
-      <a href="https://www.the-garage.tv/" target="_blank"
-        ><img src="/static/img/TheGarage-White-WordMark.png" alt="The Garage"
+      {% for partner in partnerslist %}
+      {% if partner.data.type === "Lead Partner" %}
+      <a href="{{ partner.data.website }}" target="_blank"
+        ><img src="{{ partner.data.logo }}" alt="{{ partner.data.logo }} Logo"
       /></a>
-      <a href="https://www.abelcine.com/" target="_blank"
-        ><img src="/static/img/AbelCine.png" alt="Abel Cine"
-      /></a>
-      <a href="https://www.luxmc.com/" target="_blank"
-        ><img src="/static/img/Lux LogoWhite.png" alt="Lux Machina"
-      /></a>
-      <a href="https://nabshow.com/2024/" target="_blank"
-        ><img src="/static/img/nabshow.png" alt="NABSHOW"
-      /></a>
-      <a href="https://luxlightingllc.com/" target="_blank"
-        ><img src="/static/img/luxlighting (over dark).png" alt="Lux Lighting"
-      /></a>
-      <a href="https://tisch.nyu.edu/virtual-production" target="_blank"
-        ><img src="/static/img/NYU-MSVPC_LockupArt_WHITE.png" alt="NYU MSVP"
-      /></a>
+      {% endif %}
+      {% endfor %}
     </div>
     <h3>Secondary Partners</h3>
     <div class="small-logos">
-      {% set partnerslist = collections.partners %}
       {% for partner in partnerslist %}
       {% if partner.data.type === "Secondary Partner" %}
       <a href="{{ partner.data.website }}" target="_blank"
