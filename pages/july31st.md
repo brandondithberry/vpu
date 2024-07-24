@@ -68,7 +68,8 @@ events:
     times: 2:45 PM - 3:00 PM
   - title: "Learning Virtual Production: Next-Gen Education"
     location: Abel Cine Theater
-    info: ""
+    info: "**Topics Covered: A**pproaches to virtual production education, Educating
+      crew who come from a more “traditional” background"
     times: 3:00 PM - 4:00 PM
     type: Panel Discussion
     moderator: Jeff Lee
