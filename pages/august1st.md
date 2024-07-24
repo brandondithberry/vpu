@@ -24,7 +24,7 @@ events:
       Coffee Bar (Sponsored by [Lux Machina)](https://www.luxmc.com)
     times: 8:30 AM - 9:30 AM
   - title: Opening Remarks
-    info: ""
+    info: Building Community and Education for The Future of our Industry
     location: The Garage
     times: 9:30 AM - 9:45 AM
     type: Presentation
