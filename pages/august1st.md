@@ -5,13 +5,13 @@ subtitle: "Aug 1st event is tailored to Brand, Marketing, and Advertising
   Communications Officers, and more!"
 invite: https://partiful.com/e/XOlIrrHeYdzlpffgeyrv
 image: /static/img/title-august1st.jpg
-description: Join us for an immersive one-day event crafted for advertising
-  agency, corporate, and marketing professionals eager to explore the
-  transformative realm of Virtual Production. This exclusive gathering will
+description: Join us for an immersive one-day event crafted for Brand,
+  Advertising Agency, Corporate, and Marketing professionals eager to explore
+  the transformative realm of Virtual Production. This exclusive gathering will
   feature live demonstrations showcasing the latest technologies, panel
   discussions with industry leaders, and insightful presentations from experts
   at the forefront of Virtual Production. Discover how Virtual Production can
-  enhance visual storytelling and it’s impact on production workflows and shoot
+  enhance visual storytelling and its impact on production workflows and shoot
   budgets. Connect with peers during a lively networking happy hour and gain
   invaluable insights to empower your projects in the evolving landscape of film
   production.
