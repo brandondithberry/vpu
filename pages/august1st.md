@@ -44,7 +44,9 @@ events:
       from Pre to Post Production"
     times: 10:00 AM - 10:30 AM
     type: Presentation
-    presenter: Emilia Page
+    presenter:
+      - Emilia Page
+      - Lauren Paul
   - title: 3D Virtual Production
     location: The Garage
     info: "**Topics Covered:** Virtual Art Department, Production Design, and
