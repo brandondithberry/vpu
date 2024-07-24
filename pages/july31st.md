@@ -33,13 +33,15 @@ events:
     type: Presentation
     presenter:
       - Steve Giralt
-  - title: The Basics of Virtual Production
+  - title: " Introduction to Virtual Production: A Primer by Lux Machina"
     info: "**Topics Covered:** History of Virtual production, Major components of a
       Virtual Production setup, 2D, 2.5D, and 3D"
     location: The Garage
     times: 10:00 AM - 11:00 AM
     type: Presentation
-    presenter: Emilia Page
+    presenter:
+      - Emilia Page
+      - Lauren Paul
   - title: Break
     times: 11:00 AM - 11:15 AM
   - title: 3D Virtual Production
@@ -51,24 +53,34 @@ events:
     presenter: Steve Giralt
   - title: Lunch Break at Industry City
     times: 12:30 PM - 1:30 PM
+    info: Food Options at the [Industry CIty Food
+      Hall](https://industrycity.com/eat-drink/?business-category=food-hall&page-number=2)
   - title: "Behind the Pixels: Techniques and Challenges in Lighting for Virtual
       Production"
     location: Abel Cine Theater
-    info: ""
+    info: "**Topics Covered:** Practical Lighting, Image-based Lighting, Virtual
+      Lighting"
     times: 1:30 PM - 2:45 PM
     type: Panel Discussion
     moderator: Steve Giralt
     panelists:
       - Mike Bauman
       - Emma Gottlieb
+      - Alexander MacLean
+      - Kazim Karaismailoglu
   - title: Break
     times: 2:45 PM - 3:00 PM
   - title: "Learning Virtual Production: Next-Gen Education"
     location: Abel Cine Theater
-    info: "**Panelists:** TBD"
+    info: "**Topics Covered: A**pproaches to virtual production education, Educating
+      crew who come from a more “traditional” background"
     times: 3:00 PM - 4:00 PM
     type: Panel Discussion
     moderator: Jeff Lee
+    panelists:
+      - Julie Lottering
+      - Snow Yunxue Fu
+      - David Poyner
   - title: Break / Move Back To The Garage
     times: 4:00 PM - 4:15 PM
   - title: Advanced Virtual Production Demo
