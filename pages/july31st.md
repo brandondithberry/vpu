@@ -54,7 +54,8 @@ events:
   - title: "Behind the Pixels: Techniques and Challenges in Lighting for Virtual
       Production"
     location: Abel Cine Theater
-    info: ""
+    info: "**Topics Covered:** Practical Lighting, Image-based Lighting, Virtual
+      Lighting"
     times: 1:30 PM - 2:45 PM
     type: Panel Discussion
     moderator: Steve Giralt
