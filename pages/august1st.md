@@ -70,7 +70,8 @@ events:
       - Paola Andrea
   - title: Catered Lunch
     times: 1:00 PM - 2:00 PM
-    info: Sponsored by [Abel Cine](https://www.abelcine.com)
+    info: Sponsored by [Abel Cine](https://www.abelcine.com) and
+      [Zeiss](https://www.zeiss.com/consumer-products/us/cinematography.html)
   - title: Could Your Favorite Ads Be Shot with Virtual Production? A Deep Dive
     location: Abel Cine Theater
     info: "**Topics Covered:** Virtual Production Storytelling, Virtual Art
