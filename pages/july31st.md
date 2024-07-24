@@ -61,6 +61,8 @@ events:
     panelists:
       - Mike Bauman
       - Emma Gottlieb
+      - Alexander MacLean
+      - Kazim Karaismailoglu
   - title: Break
     times: 2:45 PM - 3:00 PM
   - title: "Learning Virtual Production: Next-Gen Education"
