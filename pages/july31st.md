@@ -67,10 +67,14 @@ events:
     times: 2:45 PM - 3:00 PM
   - title: "Learning Virtual Production: Next-Gen Education"
     location: Abel Cine Theater
-    info: "**Panelists:** TBD"
+    info: ""
     times: 3:00 PM - 4:00 PM
     type: Panel Discussion
     moderator: Jeff Lee
+    panelists:
+      - Julie Lottering
+      - Snow Yunxue Fu
+      - David Poyner
   - title: Break / Move Back To The Garage
     times: 4:00 PM - 4:15 PM
   - title: Advanced Virtual Production Demo
