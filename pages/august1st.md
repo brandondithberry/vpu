@@ -1,6 +1,6 @@
 ---
 title: August 1st
-subtitle: "Aug 1st event is tailored to Brand, Marketing, and Advertising
+subtitle: "Aug 1st event is tailored to Advertising, Brand & Marketing
   Professionals: Producers, Creative Directors, Marketing Managers,
   Communications Officers, and more!"
 invite: https://partiful.com/e/XOlIrrHeYdzlpffgeyrv
