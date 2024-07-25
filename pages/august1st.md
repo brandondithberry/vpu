@@ -70,6 +70,7 @@ events:
       - Ross Fenter
       - Alex Coppedge
       - Paola Andrea
+    moderator: Lauren Paul
   - title: Catered Lunch
     times: 1:00 PM - 2:00 PM
     info: Sponsored by [Abel Cine](https://www.abelcine.com) and
