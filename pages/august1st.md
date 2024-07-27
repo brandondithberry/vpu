@@ -85,6 +85,7 @@ events:
       - Vico Sharabani
       - Barry Willams
       - Ian Messina
+      - Jim Rider
   - title: Move to NYU Tisch Martin Scorsese Virtual Production Center
     times: 3:00 PM - 3:30 PM
     info: ""
