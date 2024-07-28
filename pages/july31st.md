@@ -23,7 +23,8 @@ events:
 
       [](https://the-garage.tv)Coffee Bar (Sponsored by [Lux Machina](https://www.luxmc.com/))
     times: 8:30 AM - 9:30 AM
-  - title: Opening Remarks
+  - title: Opening Remarks:The importance of innovation at the intersection of Art,
+      Advertising, and Technology
     location: The Garage
     info: |-
       The importance of innovation at the intersection of Art and Technology.
