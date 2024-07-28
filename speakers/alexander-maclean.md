@@ -14,6 +14,6 @@ bio: >-
 
 
   Although based in New York City; Alex’s passion for filmmaking, photography, and traveling has awarded him a global client base of Advertising Agencies, Technology Companies & Fortune 100 Brands. His work has been seen everywhere from Sundance to the Super Bowl.
-headshot: /static/img/timeline-5_a_0004c001_240726_230730_a1dab-1-_0177.jpg
+headshot: /static/img/alex.jpg
 layout: layouts/speaker.njk
 ---
