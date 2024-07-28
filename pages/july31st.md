@@ -92,6 +92,7 @@ events:
     type: Demo
     presenter:
       - Steve Giralt
+    moderator: Steve Giralt
   - title: Happy Hour
     times: 5:00 PM - 7 PM
     type: Networking
