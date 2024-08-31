@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
   // Deep merge data
   eleventyConfig.setDataDeepMerge(true);
 
-  // Custom Collection Creator
+  // Collections
   const createCollectionWithSlug = (name, globPattern) => {
     eleventyConfig.addCollection(name, (collection) => {
       return collection.getFilteredByGlob(globPattern).map((item) => {
@@ -24,7 +24,17 @@ module.exports = function (eleventyConfig) {
     });
   };
 
-  // Collections
+  // Custom filters
+  // Add a filter to find a speaker by name
+  eleventyConfig.addFilter("findByName", (speaker, collection) => {
+    return collection.find((item) => item.data.speaker === speaker);
+  });
+
+  eleventyConfig.addFilter("find", function (array, key, value) {
+    return array.find((item) => item[key] === value);
+  });
+
+  // Define collections
   createCollectionWithSlug("speakers", "speakers/*.md");
   createCollectionWithSlug("partners", "partners/*.md");
   createCollectionWithSlug("locations", "locations/*.md");
@@ -56,14 +66,6 @@ module.exports = function (eleventyConfig) {
     return markdownLib.render(content);
   });
 
-  eleventyConfig.addFilter("findByName", (name, collection) => {
-    return collection.find((item) => item.data.speaker === name);
-  });
-
-  eleventyConfig.addFilter("find", (array, key, value) => {
-    return array.find((item) => item[key] === value);
-  });
-
   // Transforms
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath && outputPath.endsWith(".html")) {
@@ -71,8 +73,6 @@ module.exports = function (eleventyConfig) {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
-        minifyJS: true, // Minify inline JS
-        minifyCSS: true, // Minify inline CSS
       });
     }
     return content;
@@ -85,8 +85,8 @@ module.exports = function (eleventyConfig) {
     { "static/fonts": "static/fonts" },
     { "static/video": "static/video" },
     { "admin/": "admin" },
-    { "_includes/assets/css/main.css": "assets/css/main.css" },
-    { "_includes/assets/js/main.js": "assets/js/main.js" },
+    { "/_includes/assets/css/main.css": "assets/css/main.css" },
+    { "/_includes/assets/js/main.js": "assets/js/main.js" },
   ];
 
   staticFiles.forEach((file) => {
