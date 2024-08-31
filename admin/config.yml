@@ -146,8 +146,7 @@ collections:
       - label: "Type"
         name: "type"
         widget: "select"
-        options:
-          ["Lead Partner", "Secondary Partner"]
+        options: ["Lead Partner", "Secondary Partner"]
       - { label: Blurb, name: blurb, widget: markdown }
       - { label: Logo, name: logo, widget: image }
   - name: "speakers"
@@ -203,4 +202,3 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Embed, name: embed, widget: code, output_code_only: true }
-      - { label: Description, name: description, widget: string, required: false }
