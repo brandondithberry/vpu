@@ -20,9 +20,9 @@ permalink: /videos/index.html
         {{ video.data.title }}
         {% else %} Untitled {% endif %}
       </h3>
-      {% if video.data.embed.code %}
+      {% if video.data.embed %}
       <div>
-        {{ video.data.embed.code }}
+        {{ video.data.embed | safe }}
       </div>
       {% endif %}
     </div>
