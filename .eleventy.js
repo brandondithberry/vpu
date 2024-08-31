@@ -38,7 +38,7 @@ module.exports = function (eleventyConfig) {
   createCollectionWithSlug("speakers", "speakers/*.md");
   createCollectionWithSlug("partners", "partners/*.md");
   createCollectionWithSlug("locations", "locations/*.md");
-
+  
   // Filters
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");

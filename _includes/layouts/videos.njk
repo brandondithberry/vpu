@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+section: partners
+permalink: /partners/index.html
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="xxl-text">{{ title }}</h1>
+  </div>
+</section>
+
+{% set partnerlist = collections.partners %}
+<section class="partnerlist">
+  <div class="grid">
+    {% for partner in partnerlist %} {% if partner.data.type === "Lead Partner"
+    %}
+    <div class="partner">
+      <a href="{{ partner.data.website }}" target="_blank"
+        ><img src="{{ partner.data.logo }}" alt="partner logo" width="180px"
+      /></a>
+      <h3>
+        {% if partner.data.title %}
+        {{ partner.data.title }}
+        {% else %} Untitled {% endif %}
+      </h3>
+      {% if partner.data.blurb %}
+      <p>
+        {{ partner.data.blurb }}
+      </p>
+      <a
+        href="{{ partner.data.website }}"
+        target="_blank"
+        style="margin-top: 1rem"
+        ><button class="alt">Visit Partner Site</button></a
+      >
+      {% endif %}
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+</section>
+<section class="secondary-partners">
+  <div class="container">
+    <h2 class="xl-text">Secondary Partners</h2>
+    <div class="grid">
+      {% for partner in partnerlist %} {% if partner.data.type === "Secondary Partner" %}
+      <div class="partner">
+        <a href="{{ partner.data.website }}" target="_blank"
+          ><img src="{{ partner.data.logo }}" alt="partner logo" width="180px"
+        /></a>
+        <h5>{{ partner.data.partner }}</h5>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+</section>
