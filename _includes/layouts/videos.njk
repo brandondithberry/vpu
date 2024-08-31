@@ -15,11 +15,11 @@ permalink: /videos/index.html
   <div class="grid">
     {% for video in videolist %}
     <div class="video">
-      <h3>
+      <h4>
         {% if video.data.title %}
         {{ video.data.title }}
         {% else %} Untitled {% endif %}
-      </h3>
+      </h4>
       {% if video.data.embed %}
       {{ video.data.embed | safe }}
       {% endif %}

@@ -1076,6 +1076,17 @@ section .overlay {
 
 /* #endregion */
 
+/* #region VIDEOS */
+.videolist .grid {
+  display: grid;
+  grid-template: auto / repeat(1, 1fr);
+  grid-gap: 3rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: left;
+}
+/* #endregion */
+
 /* #region TABLET STYLING */
 
 @media screen and (min-width: 768px) {
@@ -1122,6 +1133,10 @@ section .overlay {
 
   .signup .container {
     flex-direction: row;
+  }
+
+  .videolist .grid {
+    grid-template: auto / repeat(2, 1fr);
   }
 
   footer .container {
@@ -1301,6 +1316,10 @@ section .overlay {
   }
 
   .speakers .container {
+    grid-template: auto / repeat(3, 1fr);
+  }
+
+  .videolist .grid {
     grid-template: auto / repeat(3, 1fr);
   }
 }
