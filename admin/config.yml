@@ -202,5 +202,5 @@ collections:
     identifier_field: title
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Embed, name: embed, widget: code }
+      - { label: Embed, name: embed, widget: code, output_code_only: true }
       - { label: Description, name: description, widget: string, required: false }
